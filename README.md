@@ -1,2 +1,0 @@
-# portfolio-personal
-My Portfolio
