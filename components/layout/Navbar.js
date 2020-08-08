@@ -70,12 +70,6 @@ export class Navbar extends Component {
                 <div id="navbar" className={`artflex-nav ${layOutCls}`}>
                     <div className="container">
                         <nav className="navbar navbar-expand-md navbar-light">
-                            <Link href="/digital-agency">
-                                <a className="navbar-brand">
-                                    <img src={require("../../images/logo.png")} alt="logo" />
-                                </a>
-                            </Link>
-
                             <button 
                                 onClick={this.toggleNavbar} 
                                 className={classTwo}
@@ -95,88 +89,6 @@ export class Navbar extends Component {
                                             <a className="nav-link">Home</a>
                                         </Link>
                                     </li>
-                                    
-                                    <li className="nav-item">
-                                        <a href="#" className="nav-link">Pages <i className="icofont-simple-down"></i>
-                                    </a>
-                                        <ul className="dropdown_menu">
-                                            <li className="nav-item">
-                                                <a href="#" className="nav-link">About</a>
-                                                <ul className="dropdown_menu">
-                                                    <li className="nav-item">
-                                                        <Link activeClassName="active" href="/about-us">
-                                                            <a className="nav-link">About Us</a>
-                                                        </Link>
-                                                    </li>
-                                                    
-                                                    <li className="nav-item">
-                                                        <Link activeClassName="active" href="/about-me">
-                                                            <a className="nav-link">About Me</a>
-                                                        </Link>
-                                                    </li>
-                                                </ul>
-                                            </li>
-
-                                            <li className="nav-item">
-                                                <a href="#" className="nav-link">Team</a>
-                                                <ul className="dropdown_menu">
-                                                    <li className="nav-item">
-                                                        <Link activeClassName="active" href="/team">
-                                                            <a className="nav-link">Team</a>
-                                                        </Link>
-                                                    </li>
-
-                                                    <li className="nav-item">
-                                                        <Link activeClassName="active" href="/team-details">
-                                                            <a className="nav-link">Team Details</a>
-                                                        </Link>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            
-                                            <li className="nav-item">
-                                                <Link activeClassName="active" href="/services">
-                                                    <a className="nav-link">Services</a>
-                                                </Link>
-                                            </li>
-
-                                            <li className="nav-item">
-                                                <Link activeClassName="active" href="/login">
-                                                    <a className="nav-link">Login</a>
-                                                </Link>
-                                            </li>
-
-                                            <li className="nav-item">
-                                                <Link activeClassName="active" href="/signup">
-                                                    <a className="nav-link">Sign Up</a>
-                                                </Link>
-                                            </li>
-
-                                            <li className="nav-item">
-                                                <Link activeClassName="active" href="/coming-soon">
-                                                    <a className="nav-link">Coming Soon</a>
-                                                </Link>
-                                            </li>
-
-                                            <li className="nav-item">
-                                                <Link activeClassName="active" href="/error">
-                                                    <a className="nav-link">404 Error</a>
-                                                </Link>
-                                            </li>
-                                            
-                                            <li className="nav-item">
-                                                <Link activeClassName="active" href="/faq">
-                                                    <a className="nav-link">FAQ</a>
-                                                </Link>
-                                            </li>
-
-                                            <li className="nav-item">
-                                                <Link activeClassName="active" href="/contact">
-                                                    <a className="nav-link">Contact</a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </li>
 
                                     <li className="nav-item">
                                         <Link activeClassName="active" href="/portfolio">
@@ -184,11 +96,11 @@ export class Navbar extends Component {
                                         </Link>
                                     </li>
 
-                                    <li className="nav-item">
+                                    {/*<li className="nav-item">
                                         <Link activeClassName="active" href="/portfolio-details">
                                             <a className="nav-link">Portfolio Details</a>
                                         </Link>
-                                    </li>
+                                    </li>*/}
                                     
                                     <li className="nav-item">
                                         <Link activeClassName="active" href="/contact">
@@ -200,24 +112,6 @@ export class Navbar extends Component {
                                 <div className="others-option">
                                     <ul>
                                         <li>
-                                            <span 
-                                                className="search-popup-icon"
-                                                onClick={this.handleSearchForm}
-                                            >
-                                                <i className="icofont-ui-search"></i>
-                                            </span>
-                                        </li>
-
-                                        <li>
-                                            <Link href="/cart">
-                                                <a className="cart-icon">
-                                                    <i className="icofont-bag"></i>
-                                                    <span>{products.length}</span>
-                                                </a>
-                                            </Link>
-                                        </li>
-
-                                        <li onClick={this.handleDrawer}>
                                             <div className="side-menu">
                                                 <span className="bar-1"></span>
                                                 <span className="bar-2"></span>
@@ -229,8 +123,6 @@ export class Navbar extends Component {
                             </div>
                         </nav>
                     </div>
-                    <SearchForm onClick={this.handleSearchForm} active={this.state.searchForm ? 'active' : ''} />
-                    <SideDrawer onClick={this.handleDrawer} show={this.state.drawer ? 'show' : ''} />
                 </div>
             </header>
         );

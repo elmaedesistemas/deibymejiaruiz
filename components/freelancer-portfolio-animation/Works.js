@@ -77,7 +77,7 @@ export class Works extends Component {
 
                     <div className="col-lg-3 col-md-6 col-sm-6 p-0">
                         <div className="single-work m-0">
-                            <img src={require("../../images/work-image/2.jpg")} alt="image" />
+                            <img src={require("../../images/rawi-images/project_one.jpg")} alt="image" />
 
                             <div className="works-content">
                                 <h3><a href="#">Digital Marketing</a></h3>
@@ -103,7 +103,7 @@ export class Works extends Component {
 
                     <div className="col-lg-3 col-md-6 col-sm-6 p-0">
                         <div className="single-work m-0">
-                            <img src={require("../../images/work-image/3.jpg")} alt="image" />
+                            <img src={require("../../images/rawi-images/project_two.jpg")} alt="image" />
 
                             <div className="works-content">
                                 <h3><a href="#">Digital Marketing</a></h3>

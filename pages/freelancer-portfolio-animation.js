@@ -35,7 +35,6 @@ export class index extends Component {
                 <Features />
                 <About />
                 <Services />
-                <Cta />
                 <Skills />
                 <Funfacts />
                 <Works />

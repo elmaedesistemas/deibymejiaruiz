@@ -12,7 +12,6 @@ export class Contact extends Component {
                             <h2 className="wow fadeInDown">Want to work with us? Let's talk about project!</h2>
                         </div>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                         <Link href="#">
                             <a className="btn btn-primary wow fadeInUp">Contact Us</a>
                         </Link>

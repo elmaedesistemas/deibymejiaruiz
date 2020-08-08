@@ -14,18 +14,20 @@ export class Banner extends Component {
                                         <img src={require("../../images/rawi-images/image_banner.jpg")} alt="man" />
                                     </div>
                                 </div>
-                                
+
                                 <div className="col-lg-6 col-md-12">
                                     <div className="hero-content">
-                                        <h1 className="wow fadeInUp">I am a <br /> Web Designer</h1>
+                                        <h1 className="wow fadeInUp">I am a <br /> Software Development</h1>
                                         <ul className="wow fadeInDown">
-                                            <li><a href="#" className="twitter"><i className="icofont-twitter"></i></a></li>
-                                            <li><a href="#" className="instagram"><i className="icofont-instagram"></i></a></li>
-                                            <li><a href="#" className="behance"><i className="icofont-behance"></i></a></li>
-                                            <li><a href="#" className="dribbble"><i className="icofont-dribbble"></i></a></li>
+                                            <li><a href="https://twitter.com/elmaedesistemas" className="twitter" target="_blank"><i className="icofont-twitter"></i></a></li>
+                                            <li><a href="https://www.instagram.com/elmaedesistemas_" className="dribbble" target="_blank"><i className="icofont-instagram"></i></a></li>
+                                            <li><a href="https://www.behance.net/deibymejiaruiz" className="behance" target="_blank"><i className="icofont-behance"></i></a></li>
+                                            <li><a href="https://dribbble.com/dmejia" className="dribbble" target="_blank"><i className="icofont-dribbble"></i></a></li>
                                         </ul>
                                         <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="#" className="btn btn-primary wow fadeInUp">Contact Me</a>
+                                        <Link activeClassName="active" href="/contact">
+                                            <a className="btn btn-primary wow fadeInUp">Contact Me</a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

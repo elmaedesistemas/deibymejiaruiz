@@ -13,11 +13,13 @@ export class About extends Component {
                                     <h2 className="wow fadeInDown">Who I am and What I do</h2>
                                 </div>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus quaerat quam dolorum ipsa laboriosam, repudia illum amet inventore facilis, eius libero.</p>
+                                
 
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                <p>Professional enthusiast of software engineering, music, design and photography. A professional with the ability to acquire new technical knowledge on their own.</p>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Always aware that technology is advancing and we must do it with it and always be at the forefront. He is very aware that the work and order together manage to give the best results, he is a responsible, creative, very detailed and thorough person in every project he performs.</p>
+
+                                <p>As developer, he is guided by his pleasure in creating solutions to help optimize processes, making these easier and faster, this facilitating the functions of those who make use them. Its objective is to give a feeling of satisfaction in the client by creating appropriate solutions for the needs.</p>
 
                                 <a href="#" className="btn btn-primary wow fadeInUp">Download CV</a>
                             </div>

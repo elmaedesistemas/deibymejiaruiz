@@ -15,7 +15,7 @@ import Skills from '../components/freelancer-portfolio-animation/Skills';
 import Funfacts from '../components/freelancer-portfolio-animation/Funfacts';
 import Blog from '../components/freelancer-portfolio-animation/Blog';
 import Partner from '../components/digital-agency/Partner';
-import Contact from '../components/digital-agency/Contact';
+import Contact from '../components/digital-agency-animation/Contact';
 
 export class index extends Component {
     render() {
@@ -25,19 +25,10 @@ export class index extends Component {
                 <Banner />
                 <About />
                 <Services />
-                <ChooseUs />
-                <Crafting />
                 <Works />
-                <Feedback />
-                <HowWeWork />
-                <Team />
-                <Cta />
                 <Skills />
                 <Funfacts />
-                <Blog />
-                <Partner />
                 <Contact />
-
                 <Footer />
             </React.Fragment>
         );

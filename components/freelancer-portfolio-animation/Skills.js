@@ -19,13 +19,13 @@ export class Skills extends Component {
                                             <h3 className="skill-title">HTML</h3>
 
                                             <div className="skill-percentage">
-                                                <div className="count-box"><span className="count-text">92</span>%</div>
+                                                <div className="count-box"><span className="count-text">95</span>%</div>
                                             </div>
                                         </div>
 
                                         <div className="skill-bar">
                                             <div className="progress">
-                                                <div className="progress-bar" style={{width: "92%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div className="progress-bar" style={{width: "95%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -60,7 +60,189 @@ export class Skills extends Component {
 
                                     <div className="skill-item">
                                         <div className="skill-header">
-                                            <h3 className="skill-title">Wordpress</h3>
+                                            <h3 className="skill-title">Javascript</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">90</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "90%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">NodeJS</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">80</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "90%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">ReactJS</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">90</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "90%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">React Native</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">98</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "98%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">Flutter</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">78</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "78%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">Angular</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">85</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "85%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">Ionic</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">85</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "85%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">Svelte</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">70</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "70%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">Python</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">85</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "85%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">Flask</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">80</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "90%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">Django</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">80</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "90%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">Java</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">75</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "75%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">Kotlin</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">70</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "70%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">C#</h3>
 
                                             <div className="skill-percentage"><div className="count-box"><span className="count-text">80</span>%</div></div>
                                         </div>
@@ -68,6 +250,20 @@ export class Skills extends Component {
                                         <div className="skill-bar">
                                             <div className="progress">
                                                 <div className="progress-bar" style={{width: "80%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="skill-item">
+                                        <div className="skill-header">
+                                            <h3 className="skill-title">.NET Core</h3>
+
+                                            <div className="skill-percentage"><div className="count-box"><span className="count-text">70</span>%</div></div>
+                                        </div>
+
+                                        <div className="skill-bar">
+                                            <div className="progress">
+                                                <div className="progress-bar" style={{width: "70%"}} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </div>
