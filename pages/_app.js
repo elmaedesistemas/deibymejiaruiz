@@ -29,13 +29,13 @@ export default withRedux(initStore)(
             return (
                 <React.Fragment>
                     <DefaultSeo
-                        title="Deiby Mejia | Welcome to my portfolio"
-                        description="Deiby Mejia | Welcome to my portfolio"
+                        title="Deiby Mejia, Welcome to my portfolio | Stay Hungry, Stay Foolish"
+                        description="Deiby Mejia, Welcome to my portfolio | Stay Hungry, Stay Foolish"
                         openGraph={{
                             type: 'website',
                             locale: 'en_IE',
                             url: '',
-                            site_name: 'Deiby Mejia | Welcome to my portfolio',
+                            site_name: 'Deiby Mejia, Welcome to my portfolio | Stay Hungry, Stay Foolish',
                         }}
                     />
                     <Preloader>

@@ -85,7 +85,7 @@ export class Navbar extends Component {
                             <div className={classOne} id="navbarSupportedContent">
                                 <ul className="navbar-nav ml-auto">
                                     <li className="nav-item">
-                                        <Link activeClassName="active" href="/freelancer-portfolio-animation">
+                                        <Link activeClassName="active" href="/">
                                             <a className="nav-link">Home</a>
                                         </Link>
                                     </li>

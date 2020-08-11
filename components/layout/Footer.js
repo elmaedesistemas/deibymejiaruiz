@@ -11,10 +11,10 @@ export class Footer extends Component {
                                 <p>Social Networks</p>
 
                                 <ul className="social-links">
-                                    <li><a href="#"><i className="icofont-facebook"></i></a></li>
-                                    <li><a href="#"><i className="icofont-twitter"></i></a></li>
-                                    <li><a href="#"><i className="icofont-instagram"></i></a></li>
-                                    <li><a href="#"><i className="icofont-pinterest"></i></a></li>
+                                    <li><a href="https://twitter.com/elmaedesistemas" className="twitter" target="_blank"><i className="icofont-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/elmaedesistemas_" className="dribbble" target="_blank"><i className="icofont-instagram"></i></a></li>
+                                    <li><a href="https://www.behance.net/deibymejiaruiz" className="behance" target="_blank"><i className="icofont-behance"></i></a></li>
+                                    <li><a href="https://dribbble.com/dmejia" className="dribbble" target="_blank"><i className="icofont-dribbble"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ export class Footer extends Component {
                             <div className="single-footer-widget">
 
                                 <ul className="footer-recent-post">
-                                   
+
                                 </ul>
                             </div>
                         </div>
@@ -45,19 +45,19 @@ export class Footer extends Component {
                                 <ul className="footer-contact-info">
                                     <li>
                                         <i className="icofont-google-map"></i>
-                                        <span>Location:</span> 
+                                        <span>Location:</span>
                                         San José, Costa Rica
                                     </li>
 
                                     <li>
                                         <i className="icofont-phone"></i>
-                                        <span>Phone:</span> 
+                                        <span>Phone:</span>
                                         <a href="#">+506 86767543</a>
                                     </li>
 
                                     <li>
                                         <i className="icofont-email"></i>
-                                        <span>Email:</span> 
+                                        <span>Email:</span>
                                         <a href="#">dmejia1204@gmail.com</a>
                                     </li>
                                 </ul>

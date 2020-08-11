@@ -13,22 +13,22 @@ export class Services extends Component {
                     <div className="row">
                         <div className="col-lg-4 col-md-6">
                             <div className="services-box">
-                                <img src={require("../../images/blog-image/1.jpg")} alt="image" />
+                                <img src={require("../../images/rawi-images/webdesign.jpg")} alt="image" />
                                 
                                 <div className="services-content">
                                     <h3><a href="#">Web Design</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.</p>
+                                    <p>Creation and Consulting in Web Design.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6">
                             <div className="services-box">
-                                <img src={require("../../images/blog-image/2.jpg")} alt="image" />
+                                <img src={require("../../images/rawi-images/webdevelopment.jpg")} alt="image" />
                                 
                                 <div className="services-content">
                                     <h3><a href="#">Web Development</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.</p>
+                                    <p>Development and maintenance of Applications and Websites.</p>
                                 </div>
                             </div>
                         </div>
@@ -38,24 +38,35 @@ export class Services extends Component {
                                 <img src={require("../../images/blog-image/3.jpg")} alt="image" />
                                 
                                 <div className="services-content">
-                                    <h3><a href="#">Photography</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.</p>
+                                    <h3><a href="#">Graphic Design</a></h3>
+                                    <p>Design and Consulting in the graphic design process.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6">
                             <div className="services-box">
-                                <img src={require("../../images/blog-image/4.jpg")} alt="image" />
+                                <img src={require("../../images/rawi-images/ux.jpg")} alt="image" />
                                 
                                 <div className="services-content">
-                                    <h3><a href="#">Live Support</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.</p>
+                                    <h3><a href="#">User Experience (UX)</a></h3>
+                                    <p>Design and Consulting in the User Experience Design process.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6">
+                            <div className="services-box">
+                                <img src={require("../../images/rawi-images/marketing-digital.jpg")} alt="image" />
+                                
+                                <div className="services-content">
+                                    <h3><a href="#">Marketing Digital</a></h3>
+                                    <p>Coming soon!</p>
+                                </div>  
+                            </div>
+                        </div>
+
+                        {/*<div className="col-lg-4 col-md-6">
                             <div className="services-box">
                                 <img src={require("../../images/blog-image/5.jpg")} alt="image" />
                                 
@@ -64,16 +75,16 @@ export class Services extends Component {
                                     <p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div>*/}
 
                         <div className="col-lg-4 col-md-6">
                             <div className="services-box">
-                                <img src={require("../../images/blog-image/6.jpg")} alt="image" />
+                                <img src={require("../../images/rawi-images/interface-experience.jpg")} alt="image" />
                                 
                                 <div className="services-content">
-                                    <h3><a href="#">Timely Deliverables</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.</p>
-                                </div>  
+                                    <h3><a href="#">User Interface (UI)</a></h3>
+                                    <p>Design and Consulting in the User Interface Design process.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

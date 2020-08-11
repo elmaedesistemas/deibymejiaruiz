@@ -24,7 +24,7 @@ export class Banner extends Component {
                                             <li><a href="https://www.behance.net/deibymejiaruiz" className="behance" target="_blank"><i className="icofont-behance"></i></a></li>
                                             <li><a href="https://dribbble.com/dmejia" className="dribbble" target="_blank"><i className="icofont-dribbble"></i></a></li>
                                         </ul>
-                                        <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <p>Professional enthusiast of software engineering, music, design and photography. A professional with the ability to acquire new technical knowledge on their own.</p>
                                         <Link activeClassName="active" href="/contact">
                                             <a className="btn btn-primary wow fadeInUp">Contact Me</a>
                                         </Link>

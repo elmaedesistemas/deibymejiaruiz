@@ -4,12 +4,12 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
 const images = [
-    require('../../images/work-image/1.jpg'),
-    require('../../images/work-image/6.jpg'),
-    require('../../images/work-image/21.jpg'),
+    require('../../images/rawi-images/coopeirazu.png'),
+    require('../../images/rawi-images/gogrooming.png'),
+    require('../../images/rawi-images/supexnew.jpg'),
     require('../../images/work-image/20.jpg'),
-    require('../../images/work-image/19.jpg'),
-    require('../../images/work-image/18.jpg')
+    require('../../images/rawi-images/fibooks.png'),
+    require('../../images/rawi-images/ohm_innovations.png')
 ]
 
 export class PortfolioContent extends Component {
@@ -27,11 +27,11 @@ export class PortfolioContent extends Component {
                     <div className="row">
                         <div className="col-lg-6 col-md-6">
                             <div className="single-work">
-                                <img src={require("../../images/work-image/1.jpg")} alt="image" />
+                                <img src={require("../../images/rawi-images/coopeirazu.png")} alt="image" />
 
                                 <div className="works-content">
-                                    <h3><a href="#">Digital Marketing</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h3><a href="#">Mobile Development</a></h3>
+                                    <p>Development of Travel Delivery Application, for Cooperativa Taxis Irazú (MIT Family).</p>
                                 </div>
 
                                 <a href="#" className="link-btn"><i className="icofont-external-link"></i></a>
@@ -49,11 +49,11 @@ export class PortfolioContent extends Component {
 
                         <div className="col-lg-6 col-md-6">
                             <div className="single-work">
-                                <img src={require("../../images/work-image/6.jpg")} alt="image" />
+                                <img src={require("../../images/rawi-images/gogrooming.png")} alt="image" />
 
                                 <div className="works-content">
-                                    <h3><a href="#">Digital Marketing</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h3><a href="#">Mobile Development</a></h3>
+                                    <p>Appointment Application Development, for Grooming (MIT Family).</p>
                                 </div>
 
                                 <a href="#" className="link-btn"><i className="icofont-external-link"></i></a>
@@ -71,11 +71,11 @@ export class PortfolioContent extends Component {
 
                         <div className="col-lg-6 col-md-6">
                             <div className="single-work">
-                                <img src={require("../../images/work-image/21.jpg")} alt="image" />
+                                <img src={require("../../images/rawi-images/supexnew.jpg")} alt="image" />
 
                                 <div className="works-content">
-                                    <h3><a href="#">Digital Marketing</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h3><a href="#">Backend Development</a></h3>
+                                    <p>Development of REST API for online store, SUPEXCR (MIT family).</p>
                                 </div>
 
                                 <a href="#" className="link-btn"><i className="icofont-external-link"></i></a>
@@ -112,11 +112,11 @@ export class PortfolioContent extends Component {
 
                         <div className="col-lg-6 col-md-6">
                             <div className="single-work">
-                                <img src={require("../../images/work-image/20.jpg")} alt="image" />
+                                <img src={require("../../images/rawi-images/coinpay.png")} alt="image" />
 
                                 <div className="works-content">
-                                    <h3><a href="#">Digital Marketing</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h3><a href="#">Mobile Development</a></h3>
+                                    <p>Development of Application for Payment of Public Services and Cryptocurrency Transactions (MIT family).</p>
                                 </div>
 
                                 <a href="#" className="link-btn"><i className="icofont-external-link"></i></a>
@@ -134,11 +134,11 @@ export class PortfolioContent extends Component {
 
                         <div className="col-lg-6 col-md-6">
                             <div className="single-work">
-                                <img src={require("../../images/work-image/19.jpg")} alt="image" />
+                                <img src={require("../../images/rawi-images/fibooks.png")} alt="image" />
 
                                 <div className="works-content">
-                                    <h3><a href="#">Digital Marketing</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h3><a href="#">Backend Development</a></h3>
+                                    <p>Support to the electronic invoicing system of Fibooks (Ohm Innovations) </p>
                                 </div>
 
                                 <a href="#" className="link-btn"><i className="icofont-external-link"></i></a>
@@ -156,11 +156,11 @@ export class PortfolioContent extends Component {
 
                         <div className="col-lg-6 col-md-6">
                             <div className="single-work">
-                                <img src={require("../../images/work-image/18.jpg")} alt="image" />
+                                <img src={require("../../images/rawi-images/ohm_innovations.png")} alt="image" />
 
                                 <div className="works-content">
-                                    <h3><a href="#">Digital Marketing</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h3><a href="#">Web Development</a></h3>
+                                    <p>Web Applications Developer and CFO.</p>
                                 </div>
 
                                 <a href="#" className="link-btn"><i className="icofont-external-link"></i></a>
@@ -176,7 +176,29 @@ export class PortfolioContent extends Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-12 col-md-12">
+                        <div className="col-lg-6 col-md-6">
+                            <div className="single-work">
+                                <img src={require("../../images/work-image/20.jpg")} alt="image" />
+
+                                <div className="works-content">
+                                    <h3><a href="#">Web Development</a></h3>
+                                    <p>Development of Exam Application and Administrator for the Superintendency of Telecommunications (SUTEL) (MIT Family).</p>
+                                </div>
+
+                                <a href="#" className="link-btn"><i className="icofont-external-link"></i></a>
+
+                                <Link href="#">
+                                    <a 
+                                        className="popup-btn"
+                                        onClick={e => {e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 5 })}}
+                                    >
+                                        <i className="icofont-expand"></i>
+                                    </a>
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/*<div className="col-lg-12 col-md-12">
                             <div className="pagination-area">
                                 <nav aria-label="Page navigation">
                                     <ul className="pagination justify-content-center">
@@ -188,7 +210,7 @@ export class PortfolioContent extends Component {
                                     </ul>
                                 </nav>
                             </div>
-                        </div>
+                        </div>*/}
                     </div>
                 </div>
             </section>

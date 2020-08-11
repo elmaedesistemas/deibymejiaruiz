@@ -274,8 +274,7 @@ export class Skills extends Component {
                         <div className="col-lg-6 col-md-12">
                             <div className="skill-content pl-5">
                                 <h3>Every Day is a New Challenge</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id autem veritatis nobis inventore consectetur omnis porro iusto excepturi, quo voluptate quos vel, quasi officia fugiat.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos illo qui quibusdam perspiciatis soluta cumque quia asperiores sapiente! Veniam odit veritatis mollitia eos similique impedit beatae iusto.</p>
+                                <p>Every Day is a New Challenge in Fact Every Day is Day 1</p>
                                 <a href="#" className="btn btn-primary">Hire Me</a>
                             </div>
                         </div>

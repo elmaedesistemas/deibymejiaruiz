@@ -12,7 +12,7 @@ export class Contact extends Component {
                             <h2 className="wow fadeInDown">Want to work with us? Let's talk about project!</h2>
                         </div>
 
-                        <Link href="#">
+                        <Link href="/contact">
                             <a className="btn btn-primary wow fadeInUp">Contact Us</a>
                         </Link>
                     </div>
