@@ -31,8 +31,9 @@ export class index extends Component {
                                         <i className="icofont-email"></i>
                                     </div>
                                     <h3>Mail Here</h3>
-                                    <p><a href="#">admin@artflex.com</a></p>
-                                    <p><a href="#">info@artflex.com</a></p>
+                                    <p><a href="#">dmejia1204@gmail.com</a></p>
+                                    <p><a href="#">dmejia1204@hotmail.com</a></p>
+                                    <p><a href="#">dmr1204@hotmail.com</a></p>
                                 </div>
                             </div>
 
@@ -42,7 +43,7 @@ export class index extends Component {
                                         <i className="icofont-google-map"></i>
                                     </div>
                                     <h3>Visit Here</h3>
-                                    <p>1660 Travis Street Miramar, FL 33025, California</p>
+                                    <p>Costa Rica, San José, Desamparados</p>
                                 </div>
                             </div>
 
@@ -52,8 +53,7 @@ export class index extends Component {
                                         <i className="icofont-phone"></i>
                                     </div>
                                     <h3>Call Here</h3>
-                                    <p><a href="#">+123 456 7890</a></p>
-                                    <p><a href="#">+241 452 4526</a></p>
+                                    <p><a href="#">+506 8676 - 7543</a></p>
                                 </div>
                             </div>
                         </div>
