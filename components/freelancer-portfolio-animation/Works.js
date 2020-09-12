@@ -27,7 +27,7 @@ export class Works extends Component {
                 <div className="container">
                     <div className="section-title">
                         <span className="wow fadeInUp">My Work</span>
-					    <h2 className="wow fadeInDown">Some of My Competed Projects</h2>
+                        <h2 className="wow fadeInDown">Some of My Competed Projects</h2>
                     </div>
                 </div>
 
@@ -37,8 +37,8 @@ export class Works extends Component {
                             <img src={require("../../images/work-image/1.jpg")} alt="image" />
 
                             <div className="works-content">
-                                <h3><a href="#">Digital Marketing</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h3><a href="#">Space for another project</a></h3>
+                                <p>Space for another project</p>
                             </div>
 
                             <Link href="#">
@@ -46,9 +46,9 @@ export class Works extends Component {
                             </Link>
 
                             <Link href="#">
-                                <a 
+                                <a
                                     className="popup-btn"
-                                    onClick={e => {e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 0 })}}
+                                    onClick={e => { e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 0 }) }}
                                 >
                                     <i className="icofont-expand"></i>
                                 </a>
@@ -63,9 +63,9 @@ export class Works extends Component {
                             prevSrc={images[(photoIndex + images.length - 1) % images.length]}
                             onCloseRequest={() => this.setState({ isOpenImage: false })}
                             onMovePrevRequest={() =>
-                            this.setState({
-                                photoIndex: (photoIndex + images.length - 1) % images.length,
-                            })
+                                this.setState({
+                                    photoIndex: (photoIndex + images.length - 1) % images.length,
+                                })
                             }
                             onMoveNextRequest={() =>
                                 this.setState({
@@ -80,8 +80,8 @@ export class Works extends Component {
                             <img src={require("../../images/rawi-images/project_one.jpg")} alt="image" />
 
                             <div className="works-content">
-                                <h3><a href="#">Digital Marketing</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h3><a href="#">App Delivery</a></h3>
+                                <p>Application of user and driver for cooperativa Irazú, for transport.</p>
                             </div>
 
                             <Link href="#">
@@ -91,9 +91,9 @@ export class Works extends Component {
                             </Link>
 
                             <Link href="#">
-                                <a 
+                                <a
                                     className="popup-btn"
-                                    onClick={e => {e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 1 })}}
+                                    onClick={e => { e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 1 }) }}
                                 >
                                     <i className="icofont-expand"></i>
                                 </a>
@@ -106,8 +106,8 @@ export class Works extends Component {
                             <img src={require("../../images/rawi-images/project_two.jpg")} alt="image" />
 
                             <div className="works-content">
-                                <h3><a href="#">Digital Marketing</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h3><a href="#">App of Wallet Crypto</a></h3>
+                                <p>App Payment of Public Services and Wallet Crypto.</p>
                             </div>
 
                             <Link href="#">
@@ -115,9 +115,9 @@ export class Works extends Component {
                             </Link>
 
                             <Link href="#">
-                                <a 
+                                <a
                                     className="popup-btn"
-                                    onClick={e => {e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 2 })}}
+                                    onClick={e => { e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 2 }) }}
                                 >
                                     <i className="icofont-expand"></i>
                                 </a>
@@ -130,8 +130,8 @@ export class Works extends Component {
                             <img src={require("../../images/rawi-images/project_three.jpg")} alt="image" />
 
                             <div className="works-content">
-                                <h3><a href="#">Digital Marketing</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h3><a href="#">App of Apointments</a></h3>
+                                <p>App for Apointments, for search a veterinary more near of you, and your pet.</p>
                             </div>
 
                             <Link href="#">
@@ -139,9 +139,9 @@ export class Works extends Component {
                             </Link>
 
                             <Link href="#">
-                                <a 
+                                <a
                                     className="popup-btn"
-                                    onClick={e => {e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 3 })}}
+                                    onClick={e => { e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 3 }) }}
                                 >
                                     <i className="icofont-expand"></i>
                                 </a>
@@ -154,8 +154,8 @@ export class Works extends Component {
                             <img src={require("../../images/rawi-images/irazu-taxi1.jpg")} alt="image" />
 
                             <div className="works-content">
-                                <h3><a href="#">Digital Marketing</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h3><a href="#">App Delivery</a></h3>
+                                <p>Application of user and driver for cooperativa Irazú, for transport.</p>
                             </div>
 
                             <Link href="#">
@@ -163,9 +163,9 @@ export class Works extends Component {
                             </Link>
 
                             <Link href="#">
-                                <a 
+                                <a
                                     className="popup-btn"
-                                    onClick={e => {e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 4 })}}
+                                    onClick={e => { e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 4 }) }}
                                 >
                                     <i className="icofont-expand"></i>
                                 </a>
@@ -178,8 +178,8 @@ export class Works extends Component {
                             <img src={require("../../images/work-image/6.jpg")} alt="image" />
 
                             <div className="works-content">
-                                <h3><a href="#">Digital Marketing</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h3><a href="#">Space for another project</a></h3>
+                                <p>Space for another project</p>
                             </div>
 
                             <Link href="#">
@@ -187,9 +187,9 @@ export class Works extends Component {
                             </Link>
 
                             <Link href="#">
-                                <a 
+                                <a
                                     className="popup-btn"
-                                    onClick={e => {e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 5 })}}
+                                    onClick={e => { e.preventDefault(); this.setState({ isOpenImage: true, photoIndex: 5 }) }}
                                 >
                                     <i className="icofont-expand"></i>
                                 </a>

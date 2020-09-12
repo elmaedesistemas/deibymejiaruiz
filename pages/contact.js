@@ -69,7 +69,7 @@ export class index extends Component {
 
                         <div className="row h-100 justify-content-center align-items-center">
                             <div className="col-lg-6 col-md-12">
-                                <img src={require("../images/marketing.png")} alt="image" />
+                                <img src={require("../images/feed1.jpg")} alt="image" />
                             </div>
 
                             <div className="col-lg-6 col-md-12">

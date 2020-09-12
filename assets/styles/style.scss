@@ -1375,22 +1375,22 @@ Main Banner CSS
 /* creative-blog-home */
 
 .item-bg1 {
-    background-image: url(../../images/main-bg-1.jpg);
+    background-image: url(../../images/feed1.jpg);
 }
 .item-bg2 {
-    background-image: url(../../images/main-bg-2.jpg);
+    background-image: url(../../images/feed1.jpg);
 }
 .item-bg3 {
-    background-image: url(../../images/main-bg-3.jpg);
+    background-image: url(../../images/feed1.jpg);
 }
 .item-bg4 {
-    background-image: url(../../images/main-bg-4.jpg);
+    background-image: url(../../images/feed1.jpg);
 }
 .item-bg5 {
-    background-image: url(../../images/main-bg-5.jpg);
+    background-image: url(../../images/feed1.jpg);
 }
 .item-bg6 {
-    background-image: url(../../images/main-bg-6.jpg);
+    background-image: url(../../images/feed1.jpg);
 }
 .shape1 {
     position: absolute;
@@ -3265,7 +3265,7 @@ Page Title CSS
         background: $white-color;
         width: 100%;
         height: 100%;
-        opacity: .85;
+        opacity: .45;
         z-index: -1;
     }
     &::after {

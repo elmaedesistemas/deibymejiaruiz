@@ -35,7 +35,7 @@ export class Services extends Component {
 
                         <div className="col-lg-4 col-md-6">
                             <div className="services-box">
-                                <img src={require("../../images/blog-image/3.jpg")} alt="image" />
+                                <img src={require("../../images/Buscomida_logo.png")} alt="image" />
                                 
                                 <div className="services-content">
                                     <h3><a href="#">Graphic Design</a></h3>
