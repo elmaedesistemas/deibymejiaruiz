@@ -34,7 +34,7 @@ export default withRedux(initStore)(
                         openGraph={{
                             type: 'website',
                             locale: 'en_IE',
-                            url: '',
+                            url: 'https://deibymejiaruiz.vercel.app',
                             site_name: 'Deiby Mejia, Welcome to my portfolio | Stay Hungry, Stay Foolish',
                         }}
                     />

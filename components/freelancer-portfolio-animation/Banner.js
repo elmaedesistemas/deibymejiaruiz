@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 
+import BuyMeACoffee from './BuyMeACoffee'
+
 export class Banner extends Component {
     render() {
         return (
@@ -20,17 +22,25 @@ export class Banner extends Component {
                                         <h1 className="wow fadeInUp">I am a <br /> Software Development</h1>
                                         <ul className="wow fadeInDown">
                                             <li><a href="https://twitter.com/elmaedesistemas" className="twitter" target="_blank"><i className="icofont-twitter"></i></a></li>
-                                            <li><a href="https://www.instagram.com/elmaedesistemas_" className="dribbble" target="_blank"><i className="icofont-instagram"></i></a></li>
+                                            <li><a href="https://www.instagram.com/flintloclo__" className="dribbble" target="_blank"><i className="icofont-instagram"></i></a></li>
                                             <li><a href="https://www.behance.net/deibymejiaruiz" className="behance" target="_blank"><i className="icofont-behance"></i></a></li>
                                             <li><a href="https://dribbble.com/dmejia" className="dribbble" target="_blank"><i className="icofont-dribbble"></i></a></li>
                                         </ul>
                                         <p>Professional enthusiast of software engineering, music, design and photography. A professional with the ability to acquire new technical knowledge on their own.</p>
+                                        <div className="buttons-in-banner">
                                         <Link activeClassName="active" href="/contact">
                                             <a className="btn btn-primary wow fadeInUp">Contact Me</a>
                                         </Link>
+                                        <div>
+                                        <a href="https://www.buymeacoffee.com/cometacos" target="_blank">
+                                        <img src={require("../../images/buymeacoffebutton.png")} alt="man" className="buymeacoffeebutton" />
+                                        </a>
+                                        </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>

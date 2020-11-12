@@ -50,14 +50,17 @@ This files table contents are outlined below>>>>>
 ** - Go Top CSS
 */
 
+
 /*================================================
 Default CSS
 =================================================*/
+
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-
-$font-family: 'Rubik', sans-serif;
-$paragraph-font-family: 'Open Sans', sans-serif;
+$font-family: 'Rubik',
+sans-serif;
+$paragraph-font-family: 'Open Sans',
+sans-serif;
 $template-color: #38d16a;
 $pink-color: #F54EA2;
 $white-color: #ffffff;
@@ -66,39 +69,42 @@ $paragraph-color: #6084a4;
 $bg-gray: #f9f9f9;
 $transition: .5s;
 $font-size: 15px;
-
 body {
     font-family: $font-family;
     padding: 0;
     margin: 0;
     font-size: $font-size;
 }
+
 img {
     max-width: 100%;
 }
+
 a {
     color: $black-color;
     display: inline-block;
     transition: $transition;
     text-decoration: none;
     outline: 0 !important;
-
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: $template-color;
         text-decoration: none;
     }
 }
+
 .d-table {
     width: 100%;
     height: 100%;
-
     &-cell {
         vertical-align: middle;
     }
 }
+
 button {
     outline: 0 !important;
 }
+
 p {
     color: $paragraph-color;
     line-height: 1.8;
@@ -106,50 +112,71 @@ p {
         weight: 400;
         family: $paragraph-font-family;
     }
-
     &:last-child {
         margin-bottom: 0;
     }
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $black-color;
     font-weight: 500;
 }
+
 .ptb-120 {
     padding: {
         top: 120px;
         bottom: 120px;
     }
 }
+
 .ptb-80 {
     padding: {
         top: 80px;
         bottom: 80px;
     }
 }
+
 .pt-120 {
     padding-top: 120px;
 }
+
 .ptb-50 {
     padding: {
         top: 50px;
         bottom: 50px;
     }
 }
+
 .bg-38d16a {
     background-color: $template-color;
 }
+
 .bg-08071c {
     background-color: #08071c;
 }
+
 .bg-gray {
     background-color: $bg-gray;
 }
+
 .bg-f8f9fe {
     background-color: #f8f9fe;
 }
 
+
 /*btn btn-primary*/
+
 .btn {
     font: {
         weight: 500;
@@ -161,13 +188,14 @@ p {
     border-radius: 0;
     transition: $transition;
 }
+
 .btn-primary {
     color: $white-color;
     background: $pink-color;
     position: relative;
     z-index: 1;
-
-    &::before, &::after {
+    &::before,
+    &::after {
         content: '';
         position: absolute;
         top: 0;
@@ -183,32 +211,42 @@ p {
     &::after {
         right: 0;
     }
-    &:hover::before, &:hover::after, &:focus::before, &:focus::after {
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
         width: 0;
     }
-    &.focus, &:focus {
+    &.focus,
+    &:focus {
         box-shadow: 0 13px 27px 0 rgba(245, 78, 162, .25);
         color: $white-color;
     }
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background: $pink-color;
         color: $white-color;
         box-shadow: 0 13px 27px 0 rgba(245, 78, 162, .25);
     }
-    &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus {
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus {
         box-shadow: 0 13px 27px 0 rgba(245, 78, 162, .25);
     }
-    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active {
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active {
         background: $pink-color;
         color: $white-color;
     }
-    &.disabled, &:disabled {
+    &.disabled,
+    &:disabled {
         opacity: 1;
         background: $pink-color;
     }
 }
 
+
 /*section title*/
+
 .section-title {
     text-align: center;
     margin-bottom: 60px;
@@ -230,7 +268,9 @@ p {
     }
 }
 
+
 /*form control*/
+
 .form-control {
     height: 45px;
     padding: 8px 15px;
@@ -239,8 +279,8 @@ p {
     border-radius: 2px;
     color: #818992;
     transition: $transition;
-
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         box-shadow: unset;
     }
     &:focus {
@@ -251,7 +291,9 @@ p {
     }
 }
 
+
 /*owl carousel btn*/
+
 .owl-carousel {
     &.owl-theme {
         .owl-dots {
@@ -260,10 +302,8 @@ p {
             right: 15px;
             text-align: center;
             top: 50%;
-    
             .owl-dot {
                 display: block;
-
                 span {
                     width: 16px;
                     height: 16px;
@@ -274,7 +314,6 @@ p {
                     transition: $transition;
                     text-align: center;
                     position: relative;
-
                     &::before {
                         content: '';
                         position: absolute;
@@ -291,11 +330,11 @@ p {
                         transition: $transition;
                     }
                 }
-                &.active, &:hover {
+                &.active,
+                &:hover {
                     span {
                         background: $template-color;
                         border-color: $template-color;
-
                         &::before {
                             opacity: 1;
                             visibility: visible;
@@ -307,7 +346,6 @@ p {
         .owl-nav {
             margin-top: 0;
             line-height: .01;
-
             [class*=owl-] {
                 color: $black-color;
                 font-size: 25px;
@@ -321,7 +359,6 @@ p {
                 height: 55px;
                 line-height: 51px;
                 transition: $transition;
-
                 &:hover {
                     color: $white-color;
                     background: $template-color;
@@ -335,9 +372,11 @@ p {
     }
 }
 
+
 /*================================================
 Preloader CSS
 =================================================*/
+
 .preloader {
     background: $template-color;
     position: fixed;
@@ -347,7 +386,7 @@ Preloader CSS
     height: 100%;
     z-index: 9999999999;
     text-align: center;
-    .loader{
+    .loader {
         background-color: #fff;
         width: 5px;
         height: 5px;
@@ -355,49 +394,48 @@ Preloader CSS
         position: relative;
         top: calc(50% - 2.5px);
         left: calc(50% - 2.5px);
-
-        &:before, &:after{
+        &:before,
+        &:after {
             content: "";
-            background: linear-gradient(45deg,transparent,rgba(255, 255, 255, .3),rgba(255, 255, 255, .3),transparent);
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), rgba(255, 255, 255, .3), transparent);
             width: 50px;
             height: 50px;
             border-top: 3px solid #fff;
             border-right: 3px solid #fff;
             border-radius: 0 50px 0px 0;
-            transform-origin:  0% 100%;
+            transform-origin: 0% 100%;
             position: absolute;
             top: -47px;
             animation: loader 1s linear infinite;
         }
-
         &:after {
             border-top: none;
             border-right: none;
             border-bottom: 3px solid #fff;
             border-left: 3px solid #fff;
-            border-radius: 0 0px 0px  50px;
-            transform-origin:  100% 0%;
+            border-radius: 0 0px 0px 50px;
+            transform-origin: 100% 0%;
             top: 2px;
             right: 2px;
         }
     }
-    
-    @keyframes loader{
-        0% { 
-            transform:rotate(0deg); 
+    @keyframes loader {
+        0% {
+            transform: rotate(0deg);
         }
-        100% { 
-            transform:rotate(360deg); 
+        100% {
+            transform: rotate(360deg);
         }
     }
 }
- 
+
+
 /*================================================
 Navbar CSS
 =================================================*/
+
 .artflex-mobile-nav {
     display: none;
-
     &.mean-container {
         .mean-nav {
             ul {
@@ -412,6 +450,7 @@ Navbar CSS
         }
     }
 }
+
 .artflex-nav {
     background: transparent;
     position: absolute;
@@ -421,7 +460,6 @@ Navbar CSS
     width: 100%;
     z-index: 999;
     height: auto;
-
     nav {
         ul {
             padding: 0;
@@ -432,7 +470,6 @@ Navbar CSS
             .nav-item {
                 position: relative;
                 padding: 15px 0;
-
                 a {
                     font: {
                         weight: 500;
@@ -449,8 +486,9 @@ Navbar CSS
                         left: 13px;
                         right: 13px;
                     }
-
-                    &:hover, &:focus, &.active {
+                    &:hover,
+                    &:focus,
+                    &.active {
                         color: $template-color;
                     }
                 }
@@ -476,11 +514,9 @@ Navbar CSS
                     opacity: 0;
                     visibility: hidden;
                     transition: all 0.3s ease-in-out;
-
                     li {
                         position: relative;
                         padding: 0;
-
                         a {
                             font: {
                                 size: 14px;
@@ -490,8 +526,9 @@ Navbar CSS
                             margin: 0;
                             display: block;
                             color: $white-color;
-
-                            &:hover, &:focus, &.active {
+                            &:hover,
+                            &:focus,
+                            &.active {
                                 color: $template-color;
                             }
                         }
@@ -501,12 +538,12 @@ Navbar CSS
                             top: 0;
                             opacity: 0 !important;
                             visibility: hidden !important;
-
                             li {
                                 a {
                                     color: $white-color;
-
-                                    &:hover, &:focus, &.active {
+                                    &:hover,
+                                    &:focus,
+                                    &.active {
                                         color: $template-color;
                                     }
                                 }
@@ -535,17 +572,14 @@ Navbar CSS
         }
         .others-option {
             margin-left: 10px;
-
             ul {
                 li {
                     display: inline-block;
-
                     .search-popup-icon {
                         color: $black-color;
                         cursor: pointer;
                         transition: $transition;
                         font-size: 18px;
-
                         &:hover {
                             color: $template-color;
                         }
@@ -554,7 +588,6 @@ Navbar CSS
                         font-size: 20px;
                         margin: 0 22px 0 20px;
                         position: relative;
-
                         span {
                             font-size: 11px;
                             font-size: 10px;
@@ -576,9 +609,9 @@ Navbar CSS
                         cursor: pointer;
                         position: relative;
                         width: 32px;
-
                         .bar-1 {
-                            &::before, &::after {
+                            &::before,
+                            &::after {
                                 position: absolute;
                                 bottom: -3px;
                                 width: 6px;
@@ -594,7 +627,8 @@ Navbar CSS
                             }
                         }
                         .bar-2 {
-                            &::before, &::after {
+                            &::before,
+                            &::after {
                                 position: absolute;
                                 bottom: -3px;
                                 width: 6px;
@@ -610,7 +644,8 @@ Navbar CSS
                             }
                         }
                         .bar-3 {
-                            &::before, &::after {
+                            &::before,
+                            &::after {
                                 position: absolute;
                                 bottom: -3px;
                                 width: 6px;
@@ -627,7 +662,8 @@ Navbar CSS
                         }
                         &:hover {
                             .bar-1 {
-                                &::before, &::after {
+                                &::before,
+                                &::after {
                                     height: 14px;
                                     background: $template-color;
                                 }
@@ -637,7 +673,8 @@ Navbar CSS
                                 }
                             }
                             .bar-2 {
-                                &::before, &::after {
+                                &::before,
+                                &::after {
                                     height: 10px;
                                 }
                                 &::after {
@@ -645,7 +682,8 @@ Navbar CSS
                                 }
                             }
                             .bar-3 {
-                                &::before, &::after {
+                                &::before,
+                                &::after {
                                     height: 14px;
                                     background: $pink-color;
                                 }
@@ -676,6 +714,7 @@ Navbar CSS
         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     }
 }
+
 .searchBoxTop {
     position: fixed;
     z-index: 9999;
@@ -689,7 +728,6 @@ Navbar CSS
     opacity: 0;
     filter: alpha(opacity=0);
     transition: $transition;
-
     &.active {
         top: 0;
         visibility: visible;
@@ -701,7 +739,6 @@ Navbar CSS
     }
     form {
         position: relative;
-
         .form-control {
             height: 50px;
             padding-left: 20px;
@@ -718,7 +755,6 @@ Navbar CSS
                 top: 0;
                 height: 100%;
                 transition: $transition;
-
                 &:hover {
                     background: $template-color;
                     border-color: $template-color;
@@ -734,8 +770,8 @@ Navbar CSS
         width: 50px;
         height: 50px;
         margin-top: -26px;
-
-        &::before, &::after {
+        &::before,
+        &::after {
             content: '';
             position: absolute;
             top: 4px;
@@ -752,14 +788,17 @@ Navbar CSS
         &::after {
             transform: rotate(-135deg);
         }
-        &:hover::before, &:hover::after, &:focus::before, &:focus::after {
+        &:hover::before,
+        &:hover::after,
+        &:focus::before,
+        &:focus::after {
             background-color: $template-color;
         }
     }
 }
+
 .sidebar-modal {
     position: relative;
-    
     .modal.right {
         .modal-dialog {
             position: fixed;
@@ -788,10 +827,8 @@ Navbar CSS
         }
         .modal-body {
             padding: 30px;
-
             .sidebar-modal-widget {
                 margin-bottom: 35px;
-
                 .title {
                     font: {
                         size: 18px;
@@ -807,16 +844,13 @@ Navbar CSS
                     padding: 0;
                     margin: 0;
                     list-style-type: none;
-    
                     li {
                         margin-bottom: 10px;
-    
                         &:last-child {
                             margin-bottom: 0;
                         }
                         a {
                             color: $paragraph-color;
-
                             &:hover {
                                 color: $template-color;
                             }
@@ -831,7 +865,6 @@ Navbar CSS
                             }
                             padding-left: 50px;
                             margin-bottom: 18px;
-    
                             i {
                                 position: absolute;
                                 left: 0;
@@ -873,7 +906,6 @@ Navbar CSS
                             display: inline-block;
                             margin-bottom: 0;
                             margin-right: 5px;
-    
                             a {
                                 width: 32px;
                                 height: 32px;
@@ -883,8 +915,8 @@ Navbar CSS
                                 border-radius: 50%;
                                 color: $paragraph-color;
                                 border: 1px solid $paragraph-color;
-    
-                                &:hover, &:focus {
+                                &:hover,
+                                &:focus {
                                     color: $white-color;
                                     background: $template-color;
                                     border-color: $template-color;
@@ -895,7 +927,6 @@ Navbar CSS
                 }
                 .modal-search-form {
                     position: relative;
-
                     button {
                         position: absolute;
                         right: 0;
@@ -906,7 +937,6 @@ Navbar CSS
                         padding: 0 25px;
                         background: $template-color;
                         transition: $transition;
-
                         &:hover {
                             background: $pink-color;
                         }
@@ -919,7 +949,6 @@ Navbar CSS
         display: inline;
         padding: 0;
         border: none;
-
         .close {
             height: 40px;
             width: 40px;
@@ -932,7 +961,6 @@ Navbar CSS
             transition: $transition;
             border: none;
             opacity: 1;
-
             &:hover {
                 background: $template-color;
                 color: $white_color;
@@ -952,27 +980,31 @@ Navbar CSS
     }
 }
 
+
 /*================================================
 Main Banner CSS
 =================================================*/
+
 .main-banner {
     background-color: $white-color;
     position: relative;
     z-index: 1;
     height: 810px;
 }
+
 .digital-agency-banner {
     background-image: url('../../images/banner-bg.jpg');
     background-position: center center;
     background-size: cover;
     position: relative;
 }
+
 .w-150 {
     width: 150px;
 }
+
 .hero-content {
     margin-top: 35px;
-
     h1 {
         font: {
             size: 65px;
@@ -991,11 +1023,9 @@ Main Banner CSS
         padding: 0;
         margin: 20px 0 0;
         list-style-type: none;
-
         li {
             display: inline-block;
             margin-right: 5px;
-
             a {
                 width: 35px;
                 height: 35px;
@@ -1003,11 +1033,9 @@ Main Banner CSS
                 text-align: center;
                 border: 1px solid #eeeeee;
                 border-radius: 50%;
-                
                 &.facebook {
                     border-color: #4267b2;
                     color: #4267b2;
-
                     &:hover {
                         background: #4267b2;
                         border-color: #4267b2;
@@ -1016,7 +1044,6 @@ Main Banner CSS
                 &.twitter {
                     border-color: #38A1F3;
                     color: #38A1F3;
-
                     &:hover {
                         background: #38A1F3;
                         border-color: #38A1F3;
@@ -1025,7 +1052,6 @@ Main Banner CSS
                 &.behance {
                     border-color: #053eff;
                     color: #053eff;
-
                     &:hover {
                         background: #053eff;
                         border-color: #053eff;
@@ -1034,7 +1060,6 @@ Main Banner CSS
                 &.dribbble {
                     border-color: #ea4c89;
                     color: #ea4c89;
-
                     &:hover {
                         background: #ea4c89;
                         border-color: #ea4c89;
@@ -1043,7 +1068,6 @@ Main Banner CSS
                 &.pinterest {
                     border-color: #c8232c;
                     color: #c8232c;
-
                     &:hover {
                         background: #c8232c;
                         border-color: #c8232c;
@@ -1058,42 +1082,40 @@ Main Banner CSS
         }
     }
 }
+
 .banner-image {
     text-align: right;
-
     img {
         position: relative;
         top: 74px;
         right: 0;
     }
 }
+
 .banner-social-buttons {
     position: absolute;
     left: 30px;
     top: 50%;
     transform-origin: 50% 50%;
     transform: translate(-50%, -50%) rotate(90deg);
-
     ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
-
         li {
             display: inline-block;
             margin-right: 20px;
-
             &:last-child {
                 margin-right: 0;
             }
             a {
                 color: $paragraph-color;
-
                 i {
                     width: 30px;
                     height: 30px;
                     line-height: 30px;
-                    border: 1px solid $paragraph-color;;
+                    border: 1px solid $paragraph-color;
+                    ;
                     display: inline-block;
                     text-align: center;
                     margin-right: 10px;
@@ -1106,6 +1128,7 @@ Main Banner CSS
         }
     }
 }
+
 #scroll-down {
     position: absolute;
     bottom: 20px;
@@ -1113,13 +1136,11 @@ Main Banner CSS
     padding-top: 50px;
     display: block;
     text-align: center;
-
     .arrow-down {
         display: block;
         margin: 0 auto;
         width: 10px;
         height: 20px;
-
         &::after {
             content: '';
             display: block;
@@ -1134,7 +1155,7 @@ Main Banner CSS
             transform: rotate(135deg);
         }
         &::before {
-            animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;    
+            animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
             position: absolute;
             top: 0;
             left: 50%;
@@ -1152,6 +1173,7 @@ Main Banner CSS
         text-transform: capitalize;
     }
 }
+
 @keyframes elasticus {
     0% {
         transform-origin: 0% 0%;
@@ -1170,6 +1192,7 @@ Main Banner CSS
         transform: scale(1, 0);
     }
 }
+
 .startup-agency-home {
     .main-banner {
         &::before {
@@ -1199,17 +1222,16 @@ Main Banner CSS
                 left: -115px;
                 top: 0;
             }
-
             h1 {
                 margin-bottom: 35px;
             }
         }
     }
 }
+
 .freelancer-portfolio-home {
     .banner-image {
         text-align: left;
-
         img {
             top: 33px;
             left: 0;
@@ -1244,6 +1266,7 @@ Main Banner CSS
         left: 54%;
     }
 }
+
 .agency-portfolio-home {
     .main-banner {
         height: 100%;
@@ -1255,14 +1278,16 @@ Main Banner CSS
             text-align: center;
             max-width: 720px;
             margin: 0 auto;
-
             h1 {
                 font-size: 75px;
             }
         }
     }
 }
+
+
 /* creative-blog-home */
+
 .blog-home-slides {
     .col-lg-12 {
         padding: 0 3px 0;
@@ -1302,9 +1327,9 @@ Main Banner CSS
         }
     }
 }
+
 .single-blog-box {
     position: relative;
-
     .blog-image {
         a {
             display: block;
@@ -1318,7 +1343,6 @@ Main Banner CSS
         height: auto;
         background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
         padding: 30px;
-
         div.tags {
             a {
                 background: $template-color;
@@ -1330,10 +1354,8 @@ Main Banner CSS
             margin: 15px 0;
             font-size: 25px;
             line-height: 32px;
-
             a {
                 color: $white-color;
-
                 &:hover {
                     color: $template-color;
                 }
@@ -1343,13 +1365,11 @@ Main Banner CSS
             padding: 0;
             margin: 0;
             list-style-type: none;
-
             li {
                 display: inline-block;
                 margin-right: 8px;
                 color: $white-color;
                 font-size: 14px;
-
                 i {
                     margin-right: 4px;
                 }
@@ -1372,44 +1392,55 @@ Main Banner CSS
         }
     }
 }
+
+
 /* creative-blog-home */
 
 .item-bg1 {
     background-image: url(../../images/feed1.jpg);
 }
+
 .item-bg2 {
     background-image: url(../../images/feed1.jpg);
 }
+
 .item-bg3 {
     background-image: url(../../images/feed1.jpg);
 }
+
 .item-bg4 {
     background-image: url(../../images/feed1.jpg);
 }
+
 .item-bg5 {
     background-image: url(../../images/feed1.jpg);
 }
+
 .item-bg6 {
     background-image: url(../../images/feed1.jpg);
 }
+
 .shape1 {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
+
 .shape2 {
     position: absolute;
     right: 0;
     top: 0;
     z-index: -1;
 }
+
 .shape3 {
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: -1;
 }
+
 .shape4 {
     position: absolute;
     left: 34%;
@@ -1418,6 +1449,7 @@ Main Banner CSS
     animation: movebounce 4s linear infinite;
     z-index: -1;
 }
+
 .shape5 {
     position: absolute;
     right: 14%;
@@ -1425,6 +1457,7 @@ Main Banner CSS
     z-index: -1;
     top: 18%;
 }
+
 .shape6 {
     position: absolute;
     left: 3%;
@@ -1432,6 +1465,7 @@ Main Banner CSS
     z-index: -1;
     animation: rotate3d 4s linear infinite;
 }
+
 .shape7 {
     position: absolute;
     z-index: -1;
@@ -1439,6 +1473,7 @@ Main Banner CSS
     top: 34%;
     animation: moveleftbounce 3s linear infinite;
 }
+
 .shape8 {
     position: absolute;
     bottom: 4%;
@@ -1446,18 +1481,21 @@ Main Banner CSS
     z-index: -1;
     animation: movebounce 3s linear infinite;
 }
+
 .shape9 {
     position: absolute;
     bottom: 10%;
     left: 15%;
     z-index: -1;
 }
+
 .shape10 {
     position: absolute;
     bottom: 7%;
     right: 4%;
     z-index: -1;
 }
+
 .circle-shape1 {
     position: absolute;
     bottom: 25%;
@@ -1465,6 +1503,7 @@ Main Banner CSS
     z-index: -1;
     animation: movebounce 3s linear infinite;
 }
+
 .circle-shape2 {
     position: absolute;
     right: 13%;
@@ -1472,6 +1511,7 @@ Main Banner CSS
     z-index: -1;
     animation: moveleftbounce 3s linear infinite;
 }
+
 .circle-shape3 {
     z-index: -1;
     position: absolute;
@@ -1479,34 +1519,38 @@ Main Banner CSS
     bottom: 0;
     animation: moveleftbounce 3s linear infinite;
 }
+
 @keyframes movebounce {
     0% {
-        transform: translateY(0px); 
+        transform: translateY(0px);
     }
     50% {
-        transform: translateY(20px); 
+        transform: translateY(20px);
     }
     100% {
-        transform: translateY(0px); 
-    } 
+        transform: translateY(0px);
+    }
 }
+
 @keyframes moveleftbounce {
     0% {
-        transform: translateX(0px); 
+        transform: translateX(0px);
     }
     50% {
-        transform: translateX(20px); 
+        transform: translateX(20px);
     }
     100% {
-        transform: translateX(0px); 
-    } 
+        transform: translateX(0px);
+    }
 }
+
 .rotateme {
     animation-name: rotateme;
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes rotateme {
     from {
         transform: rotate(0deg);
@@ -1515,6 +1559,7 @@ Main Banner CSS
         transform: rotate(360deg);
     }
 }
+
 @keyframes rotate3d {
     0% {
         -webkit-transform: rotateY(0deg);
@@ -1526,14 +1571,15 @@ Main Banner CSS
     }
 }
 
+
 /*================================================
 Boxes Area CSS
 =================================================*/
+
 .boxes-area {
     position: relative;
     overflow: hidden;
     z-index: 1;
-
     .single-box {
         text-align: center;
         padding: {
@@ -1542,7 +1588,6 @@ Boxes Area CSS
             left: 30px;
             right: 30px;
         }
-    
         .icon {
             font-size: 50px;
             color: $white-color;
@@ -1570,7 +1615,8 @@ Boxes Area CSS
             }
         }
     }
-    &::before, &::after {
+    &::before,
+    &::after {
         position: absolute;
         top: 0;
         width: 37%;
@@ -1588,13 +1634,16 @@ Boxes Area CSS
     }
 }
 
+
 /*================================================
 Services CSS
 =================================================*/
+
 .welcome-services {
     &.bg-38d16a {
         .section-title {
-            span, h2 {
+            span,
+            h2 {
                 color: $white-color;
             }
         }
@@ -1603,22 +1652,22 @@ Services CSS
     z-index: 1;
     overflow: hidden;
 }
+
 .services-area {
     padding-bottom: 90px;
     position: relative;
     z-index: 1;
-
     .single-services {
         box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
     }
 }
+
 .single-services {
     text-align: center;
     margin-bottom: 30px;
     padding: 40px 25px;
     background: $white-color;
     transition: $transition;
-
     .icon {
         font-size: 25px;
         width: 55px;
@@ -1643,20 +1692,19 @@ Services CSS
     }
     &:hover {
         transform: translateY(-7px);
-
         .icon {
             background: transparent;
             color: $template-color;
         }
     }
 }
+
 .single-services-box {
     background: $white-color;
     padding: 30px;
     transition: $transition;
     margin-bottom: 30px;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
-
     .icon {
         font-size: 50px;
         transition: $transition;
@@ -1677,28 +1725,31 @@ Services CSS
     &:hover {
         box-shadow: 0 0 28px 0 rgba(6, 74, 255, 0.22);
         background: $template-color;
-
-        .icon, h3, p {
+        .icon,
+        h3,
+        p {
             color: $white-color;
         }
     }
 }
+
 .more-services-btn {
     text-align: center;
     margin-top: 30px;
-
     .btn-primary {
         color: $template-color;
         background: $pink-color;
-
-        &::before, &::after {
+        &::before,
+        &::after {
             background: $white-color;
         }
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             color: $white-color;
         }
     }
 }
+
 .services-slides {
     &.owl-carousel {
         &.owl-theme {
@@ -1712,10 +1763,8 @@ Services CSS
                 text-align: center;
                 top: 0;
                 line-height: .01;
-
                 .owl-dot {
                     display: inline-block;
-
                     span {
                         margin: 0 5px;
                     }
@@ -1724,21 +1773,23 @@ Services CSS
         }
     }
 }
+
 .circle-top {
     position: absolute;
     top: -259px;
     z-index: -1;
     left: -262px;
 }
+
 .circle-bottom {
     position: absolute;
     bottom: -259px;
     z-index: -1;
     right: -262px;
 }
+
 .services-box {
     margin-bottom: 30px;
-
     .services-content {
         margin: {
             left: 10px;
@@ -1746,10 +1797,12 @@ Services CSS
         }
         position: relative;
         padding: 30px;
-        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+        box-shadow: 0 5px 20px 0 rgba(0,
+        0,
+        0,
+        0.06);
         margin-top: -20px;
         background: $white-color;
-
         h3 {
             font-size: 22px;
             margin-bottom: 10px;
@@ -1757,14 +1810,17 @@ Services CSS
     }
 }
 
+
 /*================================================
 About CSS
 =================================================*/
+
 .about-area {
     overflow: hidden;
     position: relative;
     z-index: 1;
 }
+
 .about-content {
     .section-title {
         text-align: left;
@@ -1780,11 +1836,11 @@ About CSS
         margin-top: 15px;
     }
 }
+
 .about-image {
     position: relative;
     z-index: 1;
     text-align: right;
-
     &::before {
         content: '';
         position: absolute;
@@ -1807,11 +1863,11 @@ About CSS
         }
     }
 }
+
 .about-us-content {
     .section-title {
         margin-bottom: 2px;
         text-align: left;
-
         h2 {
             margin-left: 0;
         }
@@ -1824,7 +1880,6 @@ About CSS
     }
     .single-about-box {
         margin-top: 20px;
-
         .icon {
             font-size: 40px;
             color: $template-color;
@@ -1841,12 +1896,14 @@ About CSS
         }
     }
 }
+
 .cta-about {
     overflow: hidden;
     position: relative;
     z-index: 1;
     background-color: $white-color;
 }
+
 .cta-about-image {
     background: {
         image: url(../../images/cta-about.jpg);
@@ -1856,19 +1913,17 @@ About CSS
     }
     width: 100%;
     height: 100%;
-
     img {
         display: none;
     }
 }
+
 .cta-about-content {
     max-width: 700px;
     margin-left: 15px;
-
     .section-title {
         margin-bottom: 20px;
         text-align: left;
-
         h2 {
             margin: {
                 left: 0;
@@ -1880,9 +1935,11 @@ About CSS
     }
 }
 
+
 /*================================================
 Why Choose Us CSS
 =================================================*/
+
 .why-choose-us-area {
     position: relative;
     overflow: hidden;
@@ -1899,11 +1956,10 @@ Why Choose Us CSS
             }
         }
     }
-    
 }
+
 .why-choose-us-img {
     margin-bottom: 35px;
-
     .front-img {
         position: relative;
         z-index: 1;
@@ -1918,11 +1974,11 @@ Why Choose Us CSS
         transition: $transition;
     }
 }
+
 .why-choose-us-content {
     .section-title {
         margin-bottom: 20px;
         text-align: left;
-
         h2 {
             margin: {
                 left: 0;
@@ -1933,9 +1989,9 @@ Why Choose Us CSS
         margin-top: 20px;
     }
 }
+
 .why-choose-inner-area {
     margin-top: 100px;
-
     .section-title {
         h2 {
             text-transform: initial;
@@ -1948,7 +2004,6 @@ Why Choose Us CSS
         box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.06);
         padding: 25px;
         transition: $transition;
-
         .icon {
             font-size: 40px;
             color: $template-color;
@@ -1963,13 +2018,13 @@ Why Choose Us CSS
         }
         &:hover {
             transform: translateY(-7px);
-
             .icon {
                 color: $pink-color;
             }
         }
     }
 }
+
 .circle-dot {
     position: absolute;
     top: -380px;
@@ -1977,13 +2032,16 @@ Why Choose Us CSS
     z-index: -1;
 }
 
+
 /*================================================
 Crafting CSS
 =================================================*/
+
 .crafting-area {
     position: relative;
     z-index: 1;
 }
+
 .crafting-content {
     .single-item {
         text-align: center;
@@ -1991,32 +2049,31 @@ Crafting CSS
         padding: 45px 10px;
         border-radius: 5px;
         position: absolute;
-
         &.item-one {
-            background-image: linear-gradient(40deg,#e87e16 0,#f0de14 100%);
-            box-shadow: 0 20px 40px 0 rgba(224,149,32,.4);
+            background-image: linear-gradient(40deg, #e87e16 0, #f0de14 100%);
+            box-shadow: 0 20px 40px 0 rgba(224, 149, 32, .4);
             right: 65px;
             top: -170px;
             z-index: 1;
             animation: movebounce 5s linear infinite;
         }
         &.item-two {
-            background-image: linear-gradient(40deg,#13C4A1 0,#41CBB0 100%);
-            box-shadow: 0 20px 40px 0 rgba(19,196,161,.4);
+            background-image: linear-gradient(40deg, #13C4A1 0, #41CBB0 100%);
+            box-shadow: 0 20px 40px 0 rgba(19, 196, 161, .4);
             left: 20px;
             top: 0;
             animation: movebounce 4s linear infinite;
         }
         &.item-three {
-            background-image: linear-gradient(40deg,#008000 0,#268B26 100%);
-            box-shadow: 0 20px 40px 0 rgba(0,128,0,.4);
+            background-image: linear-gradient(40deg, #008000 0, #268B26 100%);
+            box-shadow: 0 20px 40px 0 rgba(0, 128, 0, .4);
             left: 0;
             bottom: 0;
             animation: movebounce 6s linear infinite;
         }
         &.item-four {
-            background-image: linear-gradient(40deg,#FF8A73 0,#F89B88 100%);
-            box-shadow: 0 20px 40px 0 rgba(255,138,115,.4);
+            background-image: linear-gradient(40deg, #FF8A73 0, #F89B88 100%);
+            box-shadow: 0 20px 40px 0 rgba(255, 138, 115, .4);
             right: 35px;
             top: 0;
             animation: movebounce 3s linear infinite;
@@ -2038,11 +2095,11 @@ Crafting CSS
         }
     }
 }
+
 .crafting-image {
     position: relative;
     text-align: center;
     overflow: hidden;
-
     &::before {
         content: '';
         position: absolute;
@@ -2082,6 +2139,7 @@ Crafting CSS
         }
     }
 }
+
 @keyframes ripple-white {
     0% {
         -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.2), 0 0 0 40px rgba(255, 255, 255, 0.2);
@@ -2093,13 +2151,14 @@ Crafting CSS
     }
 }
 
+
 /*================================================
 Our Work CSS
 =================================================*/
+
 .works-area {
     position: relative;
     z-index: 1;
-
     &.bg-08071c {
         .section-title {
             h2 {
@@ -2108,13 +2167,13 @@ Our Work CSS
         }
     }
 }
+
 .single-work {
     position: relative;
     text-align: center;
     overflow: hidden;
     transition: $transition;
     margin-bottom: 30px;
-
     &::before {
         position: absolute;
         left: 0;
@@ -2137,7 +2196,6 @@ Our Work CSS
         transition: $transition;
         opacity: 0;
         visibility: hidden;
-
         p {
             color: $white-color;
             max-width: 520px;
@@ -2146,10 +2204,8 @@ Our Work CSS
         h3 {
             font-size: 22px;
             margin-bottom: 15px;
-
             a {
                 color: $white-color;
-
                 &:hover {
                     color: $template-color;
                 }
@@ -2164,7 +2220,6 @@ Our Work CSS
         color: $white-color;
         opacity: 0;
         visibility: hidden;
-
         &:hover {
             color: $template-color;
         }
@@ -2177,7 +2232,6 @@ Our Work CSS
         color: $white-color;
         opacity: 0;
         visibility: hidden;
-
         &:hover {
             color: $template-color;
         }
@@ -2204,6 +2258,7 @@ Our Work CSS
         }
     }
 }
+
 .shape11 {
     position: absolute;
     top: 0;
@@ -2211,6 +2266,7 @@ Our Work CSS
     z-index: -1;
     animation: movebounce 4s linear infinite;
 }
+
 .shape12 {
     position: absolute;
     top: 0;
@@ -2219,9 +2275,11 @@ Our Work CSS
     animation: movebounce 4s linear infinite;
 }
 
+
 /*================================================
 Portfolio CSS
 =================================================*/
+
 .portfolio-area {
     .section-title {
         h2 {
@@ -2229,10 +2287,10 @@ Portfolio CSS
         }
     }
 }
+
 .portfolio-item {
     position: relative;
     overflow: hidden;
-
     img {
         transition: $transition;
     }
@@ -2246,7 +2304,6 @@ Portfolio CSS
         opacity: 0;
         visibility: hidden;
         transition: $transition;
-
         h3 {
             font-size: 22px;
             margin: {
@@ -2281,7 +2338,6 @@ Portfolio CSS
         .portfolio-content {
             opacity: 1;
             visibility: visible;
-
             &::before {
                 width: 100%;
                 opacity: 1;
@@ -2299,9 +2355,9 @@ Portfolio CSS
         }
     }
 }
+
 .grid {
     max-width: 100%;
-
     .item {
         display: block;
         padding: 1px;
@@ -2309,13 +2365,16 @@ Portfolio CSS
     }
 }
 
+
 /*================================================
 Feedback CSS
 =================================================*/
+
 .feedback-area {
     position: relative;
     z-index: 1;
 }
+
 .feedback-slides {
     &.owl-carousel {
         &.owl-theme {
@@ -2323,7 +2382,6 @@ Feedback CSS
                 position: absolute;
                 left: 160px;
                 bottom: -11px;
-        
                 [class*=owl-] {
                     transition: $transition;
                     font-size: 25px;
@@ -2336,7 +2394,6 @@ Feedback CSS
                     width: auto;
                     height: auto;
                     line-height: unset;
-    
                     &:hover {
                         color: $pink-color;
                         background: transparent;
@@ -2346,10 +2403,10 @@ Feedback CSS
         }
     }
 }
+
 .feedback-area-two {
     position: relative;
     z-index: 1;
-
     .feedback-slides {
         &.owl-carousel {
             &.owl-theme {
@@ -2358,11 +2415,9 @@ Feedback CSS
                     left: 0;
                     bottom: 0;
                     right: 0;
-
                     [class*=owl-] {
                         position: absolute;
                         left: 0;
-
                         &.owl-next {
                             left: auto;
                             right: 0;
@@ -2373,12 +2428,12 @@ Feedback CSS
         }
     }
 }
+
 .single-feedback {
     position: relative;
     padding-left: 150px;
     max-width: 920px;
     margin-bottom: 40px;
-
     img {
         position: absolute;
         left: 0;
@@ -2420,13 +2475,13 @@ Feedback CSS
             right: 15px;
         }
         text-align: center;
-
         img {
             position: relative;
             margin-bottom: 25px;
         }
     }
 }
+
 .quote-img {
     position: absolute;
     left: 0;
@@ -2438,13 +2493,16 @@ Feedback CSS
     height: 350px;
 }
 
+
 /*================================================
 How We Works CSS
 =================================================*/
+
 .how-we-work {
     position: relative;
     z-index: 1;
 }
+
 .single-work-box {
     position: relative;
     box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.06);
@@ -2453,7 +2511,6 @@ How We Works CSS
     border-radius: 5px;
     transition: $transition;
     z-index: 1;
-
     h3 {
         font-size: 22px;
         margin: {
@@ -2493,12 +2550,12 @@ How We Works CSS
     &:hover {
         background: $template-color;
         transform: translateY(-5px);
-
         i {
             font-size: 130px;
             opacity: .1;
         }
-        h3, p {
+        h3,
+        p {
             color: $white-color;
         }
         .number {
@@ -2507,15 +2564,16 @@ How We Works CSS
     }
 }
 
+
 /*================================================
 Team CSS
 =================================================*/
+
 .team-area {
     position: relative;
     z-index: 1;
     padding-bottom: 90px;
     overflow: hidden;
-
     &.bg-image {
         background: {
             image: url(../../images/bg-shape.jpg);
@@ -2526,14 +2584,13 @@ Team CSS
         }
     }
 }
+
 .single-team {
     margin-bottom: 30px;
-
     .team-image {
         z-index: 1;
         position: relative;
         margin-right: 10px;
-
         .member-img {
             position: relative;
             top: 10px;
@@ -2557,11 +2614,9 @@ Team CSS
             opacity: 0;
             visibility: hidden;
             transition: $transition;
-
             li {
                 display: block;
                 margin-bottom: 5px;
-
                 a {
                     width: 35px;
                     height: 35px;
@@ -2570,7 +2625,6 @@ Team CSS
                     border: 1px solid $white-color;
                     border-radius: 50%;
                     background: $white-color;
-
                     &:hover {
                         background: $template-color;
                         border-color: $template-color;
@@ -2585,7 +2639,6 @@ Team CSS
     }
     .team-content {
         margin-top: 40px;
-
         h3 {
             font-size: 22px;
             margin-bottom: 9px;
@@ -2607,18 +2660,17 @@ Team CSS
         }
     }
 }
+
 .single-team-box {
     margin-bottom: 30px;
     text-align: center;
     transition: $transition;
     box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.06);
-
     .team-content {
         background: $white-color;
         padding: 30px 0;
         position: relative;
         transition: $transition;
-
         &::before {
             content: '';
             width: 0;
@@ -2652,10 +2704,8 @@ Team CSS
             margin: 0 auto;
             transform: scale(0);
             transition: $transition;
-
             li {
                 display: inline-block;
-
                 a {
                     display: block;
                     width: 35px;
@@ -2666,10 +2716,8 @@ Team CSS
                     margin-right: 10px;
                     position: relative;
                     z-index: 1;
-
                     &:hover {
                         color: $white-color;
-
                         &::before {
                             background: $pink-color;
                             color: $white-color;
@@ -2694,26 +2742,27 @@ Team CSS
     }
     &:hover {
         box-shadow: 0 0 28px 0 rgba(6, 74, 255, 0.22);
-
-        &::before, &::after {
+        &::before,
+        &::after {
             border-color: $template-color;
             transform: scale(1);
         }
         .team-content {
             background: $template-color;
-
             &::before {
                 width: 100%;
             }
             .social {
                 transform: scale(1);
             }
-            h3, span {
+            h3,
+            span {
                 color: $white-color;
             }
         }
     }
 }
+
 @keyframes colorchange {
     0% {
         background: $template-color;
@@ -2729,16 +2778,17 @@ Team CSS
     }
     0% {
         background: $pink-color;
-    } 
+    }
 }
+
 
 /*================================================
 CTA CSS
 =================================================*/
+
 .cta-area {
     position: relative;
     z-index: 1;
-
     .shape9 {
         bottom: auto;
         left: 15%;
@@ -2757,9 +2807,9 @@ CTA CSS
         bottom: 45px;
     }
 }
+
 .cta-content {
     text-align: center;
-
     span {
         color: $template-color;
         display: block;
@@ -2785,6 +2835,7 @@ CTA CSS
         max-width: 620px;
     }
 }
+
 .shape14 {
     position: absolute;
     right: 10%;
@@ -2792,6 +2843,7 @@ CTA CSS
     z-index: -1;
     width: 130px;
 }
+
 .shape15 {
     position: absolute;
     left: 5%;
@@ -2800,13 +2852,14 @@ CTA CSS
     width: 80px;
 }
 
+
 /*================================================
 Features CSS
 =================================================*/
+
 .features-area {
     position: relative;
     z-index: 1;
-
     .shape7 {
         top: auto;
         right: 20%;
@@ -2814,10 +2867,10 @@ Features CSS
         width: 35px;
     }
 }
+
 .features-content {
     .section-title {
         text-align: left;
-
         h2 {
             color: $white-color;
             margin: {
@@ -2829,7 +2882,6 @@ Features CSS
         position: relative;
         padding-left: 50px;
         margin-bottom: 30px;
-
         &:last-child {
             margin-bottom: 0;
         }
@@ -2850,15 +2902,14 @@ Features CSS
         }
     }
 }
+
 .features-boxes-area {
     overflow: hidden;
     position: relative;
     z-index: 1;
-
     .single-box {
         position: relative;
         padding-left: 75px;
-
         span {
             font-size: 40px;
             position: absolute;
@@ -2879,13 +2930,14 @@ Features CSS
     }
 }
 
+
 /*================================================
 Our Skill CSS
 =================================================*/
+
 .our-skill {
     .section-title {
         text-align: left;
-
         h2 {
             margin-left: 0;
         }
@@ -2893,16 +2945,14 @@ Our Skill CSS
     p {
         margin-top: 10px;
     }
-    .skills{
-        position:relative;
-
+    .skills {
+        position: relative;
         .skill-item {
             position: relative;
             margin-bottom: 25px;
-            .skill-header{
+            .skill-header {
                 position: relative;
                 margin-bottom: 10px;
-
                 .skill-title {
                     font-size: 17px;
                     margin-bottom: 0;
@@ -2932,9 +2982,8 @@ Our Skill CSS
     .progress {
         height: 7px;
         background-color: #d5d5d5;
-
         .progress-bar {
-            background-color: $template-color; 
+            background-color: $template-color;
         }
     }
 }
@@ -2943,6 +2992,7 @@ Our Skill CSS
     position: relative;
     z-index: 1;
 }
+
 .skill-content {
     h3 {
         font-size: 22px;
@@ -2955,11 +3005,11 @@ Our Skill CSS
         margin-top: 10px;
     }
 }
+
 .skill-image {
     position: relative;
     z-index: 1;
     text-align: right;
-
     .back-image {
         position: absolute;
         right: -30px;
@@ -2973,17 +3023,19 @@ Our Skill CSS
     }
 }
 
+
 /*================================================
 Fun Facts CSS
 =================================================*/
+
 .funfacts-area {
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
+
 .funfact {
     text-align: center;
-
     h3 {
         font: {
             size: 45px;
@@ -3000,27 +3052,26 @@ Fun Facts CSS
     }
 }
 
+
 /*================================================
 Blog CSS
 =================================================*/
+
 .blog-area {
     padding-bottom: 90px;
-
     .pagination-area {
         margin-bottom: 30px;
     }
 }
+
 .single-blog-post {
     margin-bottom: 30px;
     box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.06);
-
     .blog-image {
         position: relative;
         overflow: hidden;
-
         a {
             display: block;
-
             img {
                 transition: .9s;
             }
@@ -3030,7 +3081,6 @@ Blog CSS
             right: 0;
             top: 60px;
             transition: $transition;
-
             a {
                 background: $template-color;
                 color: $white-color;
@@ -3040,7 +3090,6 @@ Blog CSS
     }
     .blog-post-content {
         padding: 25px;
-
         .date {
             color: $paragraph-color;
             display: block;
@@ -3060,7 +3109,6 @@ Blog CSS
         position: relative;
         font-weight: 500;
         color: $template-color;
-
         &:hover {
             color: $pink-color;
             letter-spacing: 1px;
@@ -3075,7 +3123,6 @@ Blog CSS
             }
             .post-tag {
                 top: 70px;
-    
                 a {
                     background: $pink-color;
                     color: $white-color;
@@ -3085,7 +3132,6 @@ Blog CSS
     }
     &.without-thumbnail {
         box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
-
         .blog-post-content {
             p {
                 margin: {
@@ -3106,21 +3152,20 @@ Blog CSS
     }
 }
 
+
 /*================================================
 Our Partner CSS
 =================================================*/
+
 .partner-area {
     .partner-item {
         text-align: center;
-
         a {
             position: relative;
             display: block;
-
             img {
                 width: unset !important;
                 display: inline-block !important;
-
                 &:last-child {
                     position: absolute;
                     left: 0;
@@ -3147,16 +3192,18 @@ Our Partner CSS
     }
 }
 
+
 /*================================================
 Contact CTA CSS
 =================================================*/
+
 .contact-cta-area {
     position: relative;
     z-index: 1;
 }
+
 .contact-cta-content {
     text-align: center;
-
     .section-title {
         margin-bottom: 20px;
     }
@@ -3165,12 +3212,14 @@ Contact CTA CSS
         margin: 0 auto 30px;
     }
 }
+
 .shape13 {
     position: absolute;
     left: 5%;
     top: 41%;
     z-index: -1;
 }
+
 .shape18 {
     position: absolute;
     top: 10%;
@@ -3178,6 +3227,7 @@ Contact CTA CSS
     z-index: -1;
     animation: movebounce 3s linear infinite;
 }
+
 .shape19 {
     position: absolute;
     bottom: 10%;
@@ -3185,12 +3235,14 @@ Contact CTA CSS
     z-index: -1;
     animation: moveleftbounce 3s linear infinite;
 }
+
 .shape20 {
     position: absolute;
     right: 10%;
     z-index: -1;
     bottom: 10%;
 }
+
 .shape21 {
     position: absolute;
     top: 15%;
@@ -3198,6 +3250,7 @@ Contact CTA CSS
     z-index: -1;
     animation: rotate3d 4s linear infinite;
 }
+
 .shape22 {
     position: absolute;
     right: 7%;
@@ -3205,12 +3258,14 @@ Contact CTA CSS
     top: 45%;
     animation: movebounce 3s linear infinite;
 }
+
 .shape23 {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
+
 .shape24 {
     position: absolute;
     bottom: 0;
@@ -3218,6 +3273,7 @@ Contact CTA CSS
     z-index: -1;
     display: none;
 }
+
 .shape25 {
     position: absolute;
     top: 185px;
@@ -3225,12 +3281,14 @@ Contact CTA CSS
     z-index: -1;
     animation: movebounce 3s linear infinite;
 }
+
 .shape26 {
     position: absolute;
     z-index: -1;
     left: 50px;
     bottom: 10%;
 }
+
 .shape27 {
     position: absolute;
     z-index: -1;
@@ -3241,9 +3299,11 @@ Contact CTA CSS
     text-align: center;
 }
 
+
 /*================================================
 Page Title CSS
 =================================================*/
+
 .page-title-area {
     position: relative;
     z-index: 1;
@@ -3289,14 +3349,12 @@ Page Title CSS
         padding: 0;
         margin: 0;
         list-style-type: none;
-
         li {
             color: $template-color;
             display: inline-block;
             position: relative;
             padding-left: 15px;
             font-weight: 500;
-
             &::before {
                 content: '';
                 position: absolute;
@@ -3310,7 +3368,6 @@ Page Title CSS
             }
             &:first-child {
                 padding-left: 0;
-
                 &::before {
                     display: none;
                 }
@@ -3319,17 +3376,17 @@ Page Title CSS
     }
 }
 
+
 /*================================================
 Pagination CSS
 =================================================*/
+
 .pagination-area {
     margin-top: 30px;
-
     ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
-
         .page-item {
             .page-link {
                 padding: 8px 16px;
@@ -3341,8 +3398,8 @@ Pagination CSS
                     weight: 500;
                 }
                 border: 1px solid #eeeeee;
-    
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     color: $white-color;
                     background: $template-color;
                     border-color: $template-color;
@@ -3361,21 +3418,20 @@ Pagination CSS
     }
 }
 
+
 /*================================================
 Sidebar CSS
 =================================================*/
+
 .sidebar {
     .widget {
         margin-bottom: 30px;
-
         &.widget_search {
             background: $white-color;
-            box-shadow: 0px 0px 29px 0px rgba(102,102,102,0.1);
+            box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
             padding: 15px;
-
             form {
                 position: relative;
-
                 button {
                     position: absolute;
                     right: 5px;
@@ -3385,18 +3441,17 @@ Sidebar CSS
                     background: transparent;
                     color: $template-color;
                     transition: $transition;
-
                     &:hover {
                         color: $pink-color;
                     }
                 }
             }
         }
-        h3, .widget-title {
+        h3,
+        .widget-title {
             font-size: 22px;
             margin-bottom: 25px;
             position: relative;
-
             span {
                 z-index: 2;
                 position: relative;
@@ -3446,7 +3501,6 @@ Sidebar CSS
                     }
                     a {
                         color: $paragraph-color;
-
                         &:hover {
                             color: $template-color;
                         }
@@ -3465,10 +3519,8 @@ Sidebar CSS
                     position: relative;
                     padding-left: 100px;
                     margin-bottom: 15px;
-
                     a {
                         display: block;
-
                         img {
                             position: absolute;
                             left: 0;
@@ -3499,7 +3551,6 @@ Sidebar CSS
                     margin-bottom: 5px;
                     color: $paragraph-color;
                     margin-right: 10px;
-
                     &:hover {
                         background: $template-color;
                         color: $white-color;
@@ -3534,7 +3585,6 @@ Sidebar CSS
                     }
                     a {
                         color: $paragraph-color;
-
                         &:hover {
                             color: $template-color;
                         }
@@ -3548,7 +3598,8 @@ Sidebar CSS
             }
         }
         &:hover {
-            h3, .widget-title {
+            h3,
+            .widget-title {
                 &::before {
                     width: 0;
                 }
@@ -3560,19 +3611,18 @@ Sidebar CSS
     }
 }
 
+
 /*================================================
 Blog Details CSS
 =================================================*/
+
 .blog-details-area {
     position: relative;
-
     .blog-details {
         box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
         background: $white-color;
-
         .article-img {
             position: relative;
-
             .date {
                 position: absolute;
                 bottom: 15px;
@@ -3581,8 +3631,8 @@ Blog Details CSS
                 height: 90px;
                 text-align: center;
                 font: {
-                   size: 22px;
-                   style: italic;
+                    size: 22px;
+                    style: italic;
                 }
                 background: $template-color;
                 color: $white-color;
@@ -3593,7 +3643,6 @@ Blog Details CSS
         }
         .article-content {
             padding: 30px;
-
             ul {
                 li {
                     display: inline-block;
@@ -3601,7 +3650,6 @@ Blog Details CSS
                 &.category {
                     li {
                         margin-right: 4px;
-
                         a {
                             background: $template-color;
                             color: $white-color;
@@ -3634,7 +3682,6 @@ Blog Details CSS
                 background: $bg-gray;
                 padding: 30px;
                 border-left: 4px solid $template-color;
-
                 p {
                     margin-top: 0;
                     font-size: 18px;
@@ -3643,11 +3690,9 @@ Blog Details CSS
             .share-post {
                 text-align: center;
                 margin-top: 30px;
-
                 ul {
                     li {
                         margin: 0 2px;
-
                         a {
                             width: 40px;
                             font-size: 15px;
@@ -3657,8 +3702,8 @@ Blog Details CSS
                             border: 1px solid #eeeeee;
                             border-radius: 50%;
                             color: #555555;
-
-                            &:hover, &:focus {
+                            &:hover,
+                            &:focus {
                                 color: $white-color;
                                 border-color: $template-color;
                                 background-color: $template-color;
@@ -3680,10 +3725,17 @@ Blog Details CSS
             top: 25px;
             bottom: 25px;
         }
-        background: $white-color;;
+        background: $white-color;
+        ;
         padding: 30px;
-        box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
-
+        box-shadow: 0 5px 10px rgba(0,
+        9,
+        128,
+        0.035),
+        0 7px 18px rgba(0,
+        9,
+        128,
+        0.05);
         .controls-left {
             float: left;
         }
@@ -3697,8 +3749,8 @@ Blog Details CSS
                 display: inline-block;
                 border-radius: 5px;
                 font-weight: 500;
-
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     color: $white-color;
                     background: $template-color;
                     border-color: $template-color;
@@ -3710,7 +3762,6 @@ Blog Details CSS
         padding: 30px;
         background: $white-color;
         box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
-
         h3 {
             font: {
                 size: 22px;
@@ -3721,14 +3772,12 @@ Blog Details CSS
             position: relative;
             padding-left: 95px;
             margin-top: 30px;
-
             .comment-img {
                 position: absolute;
                 left: 0;
                 top: 0;
                 width: 75px;
                 height: 75px;
-
                 img {
                     border-radius: 50%;
                 }
@@ -3763,7 +3812,6 @@ Blog Details CSS
         background: $white-color;
         box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
         margin-top: 25px;
-
         h3 {
             font: {
                 size: 22px;
@@ -3773,17 +3821,19 @@ Blog Details CSS
     }
 }
 
+
 /*================================================
 Shop CSS
 =================================================*/
+
 .woocommerce-topbar {
     margin-bottom: 30px;
 }
+
 .single-product {
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.06);
     background: $white-color;
     margin-bottom: 30px;
-
     .product-image {
         overflow: hidden;
         a {
@@ -3797,16 +3847,15 @@ Shop CSS
     .product-content {
         padding: 30px;
         text-align: center;
-
         h3 {
             font-size: 22px;
             margin-bottom: 8px;
         }
-        ul, .rating {
+        ul,
+        .rating {
             padding: 0;
             margin: 0;
             list-style-type: none;
-
             li {
                 display: inline-block;
                 color: #ffc412;
@@ -3835,17 +3884,19 @@ Shop CSS
     }
 }
 
+
 /*================================================
 Product Details CSS
 =================================================*/
+
 .shop-details-area {
     padding-bottom: 90px;
 }
+
 .shop-details {
-	background: $white-color;
-	padding: 30px;
+    background: $white-color;
+    padding: 30px;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-    
     .product-img {
         a {
             display: block;
@@ -3864,7 +3915,6 @@ Product Details CSS
                 size: 15px;
             }
             margin: 16px 0;
-
             span {
                 color: $paragraph-color;
                 text-decoration: line-through;
@@ -3877,12 +3927,10 @@ Product Details CSS
             padding: 0;
             margin: 0;
             list-style-type: none;
-
             &.share-social {
                 li {
                     margin-right: 4px;
                     display: inline-block;
-
                     &:first-child {
                         margin: 7px;
                     }
@@ -3894,7 +3942,6 @@ Product Details CSS
                         text-align: center;
                         border-radius: 50%;
                         line-height: 35px;
-
                         &:hover {
                             color: $white-color;
                             background: $template-color;
@@ -3925,7 +3972,6 @@ Product Details CSS
                 display: inline-block;
                 position: relative;
                 margin-right: 10px;
-
                 input {
                     height: 45px;
                     color: $black-color;
@@ -3948,7 +3994,6 @@ Product Details CSS
                     height: 100%;
                     line-height: 48px;
                     transition: $transition;
-
                     &.minus-btn {
                         left: 0;
                     }
@@ -3964,12 +4009,10 @@ Product Details CSS
     }
     .shop-details-tabs {
         margin-top: 40px;
-
         #tabs {
             padding: 0;
             margin: 0 0 40px;
             list-style-type: none;
-
             li {
                 display: inline-block;
                 padding: 12px 50px 8px;
@@ -3979,11 +4022,9 @@ Product Details CSS
                     size: 16px;
                 }
                 background: #eaeaea;
-
                 &.active {
                     background-color: $white-color;
                     position: relative;
-
                     &::before {
                         content: '';
                         position: absolute;
@@ -4002,7 +4043,6 @@ Product Details CSS
         }
         .content {
             display: none;
-
             &.show {
                 display: block;
             }
@@ -4021,14 +4061,12 @@ Product Details CSS
                     padding: 0;
                     margin: 0;
                     list-style-type: none;
-
                     li {
                         display: inline-block;
                         position: relative;
                         margin: {
                             right: 15px;
                         }
-
                         &::before {
                             content: '';
                             position: absolute;
@@ -4055,13 +4093,12 @@ Product Details CSS
         }
     }
 }
+
 .shop-related-prodcut {
     margin-top: 50px;
-
     .section-title {
         text-align: left;
         margin-bottom: 40px;
-
         h2 {
             margin-left: 0;
             font-size: 30px;
@@ -4069,14 +4106,15 @@ Product Details CSS
     }
 }
 
+
 /*================================================
 Cart CSS
 =================================================*/
+
 .cart-table {
     table {
         margin-bottom: 0;
         text-align: center;
-
         thead {
             tr {
                 th {
@@ -4094,11 +4132,9 @@ Cart CSS
                     vertical-align: middle;
                     color: $paragraph-color;
                     border-color: #eaedff;
-
                     &.product-thumbnail {
                         a {
                             display: block;
-
                             img {
                                 width: 130px;
                             }
@@ -4107,7 +4143,6 @@ Cart CSS
                     &.product-name {
                         a {
                             color: $paragraph-color;
-
                             &:hover {
                                 color: $template-color;
                             }
@@ -4124,7 +4159,6 @@ Cart CSS
                         text-align: center;
                         display: inline-block;
                         position: relative;
-        
                         input {
                             height: 45px;
                             color: $black-color;
@@ -4147,7 +4181,6 @@ Cart CSS
                             height: 100%;
                             line-height: 48px;
                             transition: $transition;
-        
                             &.minus-btn {
                                 left: 0;
                             }
@@ -4164,13 +4197,12 @@ Cart CSS
         }
     }
 }
+
 .cart-buttons {
     margin-top: 30px;
-
     .coupon-box {
         position: relative;
         max-width: 470px;
-
         button {
             position: absolute;
             right: 0;
@@ -4184,13 +4216,13 @@ Cart CSS
             cursor: pointer;
             border-radius: 0 5px 5px 0;
             color: $white-color;
-
             &:hover {
                 background: $template-color;
             }
         }
     }
 }
+
 .cart-totals {
     background: $white-color;
     padding: 40px;
@@ -4198,7 +4230,6 @@ Cart CSS
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     border-radius: 5px;
     margin-left: auto;
-
     h3 {
         font: {
             size: 22px;
@@ -4209,13 +4240,11 @@ Cart CSS
         padding: 0;
         margin: 0 0 25px;
         list-style-type: none;
-        
         li {
             border: 1px solid #eaedff;
             padding: 10px 15px;
             color: $paragraph-color;
             overflow: hidden;
-            
             &:first-child {
                 border-bottom: none;
             }
@@ -4227,16 +4256,17 @@ Cart CSS
     }
 }
 
+
 /*================================================
 Checkout CSS
 =================================================*/
+
 .user-actions {
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     background: $white-color;
     padding: 18px 25px 15px;
     margin-bottom: 45px;
     border-top: 3px solid $template-color;
-
     i {
         color: $template-color;
         margin-right: 4px;
@@ -4247,6 +4277,7 @@ Checkout CSS
         margin-right: 5px;
     }
 }
+
 .checkout-area {
     .title {
         font: {
@@ -4255,19 +4286,18 @@ Checkout CSS
         margin-bottom: 25px;
     }
 }
+
 .billing-details {
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     background: $white-color;
     padding: 25px;
     border-radius: 5px;
-
     .form-group {
         label {
             display: block;
             color: $paragraph-color;
             margin-bottom: 8px;
             font-size: 15px;
-
             .required {
                 color: red;
             }
@@ -4275,23 +4305,21 @@ Checkout CSS
     }
     .form-check {
         margin-bottom: 15px;
-
         .form-check-label {
             color: $paragraph-color;
         }
     }
 }
+
 .order-details {
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     background: $white-color;
     padding: 25px;
     border-radius: 5px;
-
     .order-table {
         table {
             margin-bottom: 0;
             text-align: left;
-    
             thead {
                 tr {
                     th {
@@ -4313,17 +4341,17 @@ Checkout CSS
                         color: $paragraph-color;
                         border-color: #eaedff;
                         font-size: 15px;
-    
                         &.product-name {
                             a {
                                 color: $paragraph-color;
-    
                                 &:hover {
                                     color: $template-color;
                                 }
                             }
                         }
-                        &.order-subtotal, &.order-shipping , &.total-price {
+                        &.order-subtotal,
+                        &.order-shipping,
+                        &.total-price {
                             span {
                                 color: $black-color;
                                 font-weight: 500;
@@ -4338,19 +4366,20 @@ Checkout CSS
         margin-top: 40px;
         border-top: 1px solid #eaedff;
         padding-top: 35px;
-
         p {
             font: {
                 size: 14px;
             }
             [type="radio"] {
-                &:checked, &:not(:checked) {
+                &:checked,
+                &:not(:checked) {
                     display: none;
                 }
             }
             [type="radio"] {
-                &:checked, &:not(:checked) {
-                    + label {
+                &:checked,
+                &:not(:checked) {
+                    +label {
                         padding-left: 30px;
                         cursor: pointer;
                         display: block;
@@ -4361,7 +4390,6 @@ Checkout CSS
                         color: $black-color;
                         position: relative;
                         margin-bottom: 8px;
-
                         &::before {
                             content: '';
                             position: absolute;
@@ -4389,7 +4417,7 @@ Checkout CSS
             }
             [type="radio"] {
                 &:not(:checked) {
-                    + label {
+                    +label {
                         &::after {
                             opacity: 0;
                             visibility: hidden;
@@ -4400,7 +4428,7 @@ Checkout CSS
             }
             [type="radio"] {
                 &:checked {
-                    + label {
+                    +label {
                         &::after {
                             opacity: 1;
                             visibility: visible;
@@ -4417,7 +4445,6 @@ Checkout CSS
                 display: block;
                 margin-top: 25px;
                 width: 100%;
-
                 &.btn-disabled {
                     cursor: no-drop;
                 }
@@ -4429,16 +4456,17 @@ Checkout CSS
     }
 }
 
+
 /*================================================
 Contact CSS
 =================================================*/
+
 .contact-info-box {
     text-align: center;
     transition: $transition;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     background: $white-color;
     padding: 30px;
-    
     .icon {
         display: inline-block;
         width: 80px;
@@ -4458,10 +4486,8 @@ Contact CSS
     }
     p {
         margin-bottom: 0;
-
         a {
             color: $paragraph-color;
-
             &:hover {
                 color: $template-color;
             }
@@ -4469,22 +4495,22 @@ Contact CSS
     }
     &:hover {
         transform: translateY(-10px);
-
         .icon {
             color: $white-color;
             background: $template-color;
         }
     }
 }
+
 #map {
     height: 500px;
     width: 100%;
 }
+
 #contactForm {
     .help-block {
         ul {
             margin: 0;
-
             li {
                 color: red;
             }
@@ -4494,27 +4520,28 @@ Contact CSS
         margin-top: 10px;
     }
     #msgSubmit {
-        &.text-danger, &.text-success {
+        &.text-danger,
+        &.text-success {
             margin: 20px 0 0;
         }
     }
 }
 
+
 /*================================================
 Portfolio Details CSS
 =================================================*/
+
 .project-info {
     ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
-
         li {
             font: {
                 size: 20px;
                 weight: 500;
             }
-
             span {
                 display: block;
                 color: $paragraph-color;
@@ -4523,32 +4550,26 @@ Portfolio Details CSS
                     weight: 400;
                 }
                 margin-top: 5px;
-
                 a {
                     color: $paragraph-color;
-
                     &:hover {
                         color: $template-color;
                     }
                 }
             }
             margin-bottom: 20px;
-
             &:last-child {
                 margin-bottom: 0;
             }
             ul {
                 margin-top: 10px;
-
                 li {
                     display: inline-block;
                     margin: 0;
-                    
                     a {
                         color: $paragraph-color;
                         margin-right: 10px;
                         font-size: 16px;
-
                         &:hover {
                             color: $template-color;
                         }
@@ -4558,19 +4579,21 @@ Portfolio Details CSS
         }
     }
 }
+
 .portfolio-details-content {
     margin-top: 30px;
     max-width: 750px;
-
     h3 {
         font-size: 22px;
         margin-bottom: 15px;
     }
 }
 
+
 /*================================================
 Team Details CSS
 =================================================*/
+
 .team-details-info {
     h3 {
         font-size: 22px;
@@ -4581,7 +4604,6 @@ Team Details CSS
     }
     .personal-information {
         margin-top: 20px;
-
         h3 {
             font-size: 16px;
             margin-bottom: 10px;
@@ -4590,16 +4612,13 @@ Team Details CSS
             margin: 20px 0 0;
             padding: 0;
             list-style-type: none;
-
             li {
                 margin-bottom: 8px;
                 font-size: 15px;
                 color: $paragraph-color;
-
                 span {
                     a {
                         color: $paragraph-color;
-
                         &:hover {
                             color: $template-color;
                         }
@@ -4612,24 +4631,21 @@ Team Details CSS
         }
     }
 }
+
 .overview-desc {
     margin-top: 30px;
-
     h3 {
         font-size: 22px;
         margin-bottom: 15px;
     }
-    .skills{
-        position:relative;
-
+    .skills {
+        position: relative;
         .skill-item {
             position: relative;
             margin-bottom: 25px;
-        
-            .skill-header{
+            .skill-header {
                 position: relative;
                 margin-bottom: 10px;
-
                 .skill-title {
                     font-size: 17px;
                     margin-bottom: 0;
@@ -4652,13 +4668,11 @@ Team Details CSS
             .skill-bar {
                 position: relative;
                 width: 100%;
-
                 .bar-inner {
                     position: relative;
                     width: 100%;
                     border-bottom: 7px solid #d5d5d5;
                     border-radius: 30px;
-
                     .bar {
                         position: absolute;
                         left: 0px;
@@ -4675,15 +4689,16 @@ Team Details CSS
     }
 }
 
+
 /*================================================
 Login CSS
 =================================================*/
+
 .login-form {
     background: $white-color;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     padding: 40px;
     border-radius: 5px;
-    
     h3 {
         font: {
             size: 22px;
@@ -4696,7 +4711,6 @@ Login CSS
     form {
         .form-check {
             margin-top: 18px;
-
             .form-check-label {
                 color: $paragraph-color;
                 position: relative;
@@ -4710,7 +4724,6 @@ Login CSS
             }
             a {
                 color: $paragraph-color;
-
                 &:hover {
                     color: $template-color;
                 }
@@ -4725,7 +4738,6 @@ Login CSS
         span {
             display: block;
             color: $paragraph-color;
-
             a {
                 color: $template-color;
             }
@@ -4733,15 +4745,16 @@ Login CSS
     }
 }
 
+
 /*================================================
 Signup CSS
 =================================================*/
+
 .signup-form {
     background: $white-color;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     padding: 40px;
     border-radius: 5px;
-    
     h3 {
         font: {
             size: 22px;
@@ -4751,7 +4764,6 @@ Signup CSS
     form {
         .form-check {
             margin-top: 10px;
-
             .form-check-label {
                 color: $paragraph-color;
             }
@@ -4765,7 +4777,6 @@ Signup CSS
         span {
             display: block;
             color: $paragraph-color;
-
             a {
                 color: $template-color;
             }
@@ -4773,22 +4784,21 @@ Signup CSS
     }
 }
 
+
 /*================================================
 FAQ CSS
 =================================================*/
+
 .faq-accordion {
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     padding: 60px;
     background: $white-color;
     border-radius: 10px;
-
     .accordion {
         border: none;
-
         .accordion__item {
             display: block;
             margin-bottom: 15px;
-
             &:last-child {
                 margin-bottom: 0;
             }
@@ -4804,8 +4814,9 @@ FAQ CSS
                     size: 20px;
                     weight: 500;
                 }
-
-                &:hover, &.active, &:focus {
+                &:hover,
+                &.active,
+                &:focus {
                     background: $template-color;
                     color: $white-color;
                 }
@@ -4820,17 +4831,17 @@ FAQ CSS
                 line-height: 1.9;
             }
         }
-        .accordion__item + .accordion__item {
+        .accordion__item+.accordion__item {
             border: none;
         }
     }
 }
+
 .faq-contact {
     margin-top: 45px;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     padding: 60px;
     border-radius: 4px;
-
     h3 {
         font: {
             size: 25px;
@@ -4844,9 +4855,11 @@ FAQ CSS
     }
 }
 
+
 /*================================================
 Coming Soon CSS
 =================================================*/
+
 .coming-soon {
     position: relative;
     z-index: 1;
@@ -4860,7 +4873,6 @@ Coming Soon CSS
     height: 100vh;
     text-align: center;
     overflow: hidden;
-
     &::before {
         z-index: -1;
         width: 100%;
@@ -4875,7 +4887,6 @@ Coming Soon CSS
     .coming-soon-content {
         max-width: 650px;
         margin: 0 auto;
-
         h1 {
             color: $white-color;
             font: {
@@ -4895,7 +4906,6 @@ Coming Soon CSS
         }
         form {
             position: relative;
-
             .form-control {
                 background: transparent;
                 border: 1px solid $white-color;
@@ -4903,7 +4913,6 @@ Coming Soon CSS
                 color: $white-color;
                 padding-left: 15px;
                 height: 55px;
-
                 &:focus {
                     border-color: $template-color;
                 }
@@ -4925,7 +4934,6 @@ Coming Soon CSS
                 text-transform: uppercase;
                 border-radius: 0 50px 50px 0;
                 transition: $transition;
-
                 &:hover {
                     background: $pink-color;
                 }
@@ -4933,7 +4941,6 @@ Coming Soon CSS
         }
         #timer {
             margin-bottom: 35px;
-
             div {
                 display: inline-block;
                 font: {
@@ -4960,9 +4967,11 @@ Coming Soon CSS
     }
 }
 
+
 /*================================================
 404 Error CSS
 =================================================*/
+
 .error {
     background: url(../../images/error.gif) no-repeat center center fixed;
     background-size: cover;
@@ -4979,7 +4988,6 @@ Coming Soon CSS
         content: '';
         opacity: .60;
     }
-
     h1 {
         font-size: 260px;
         margin: 0;
@@ -4991,7 +4999,6 @@ Coming Soon CSS
         margin: 0 0 35px;
         color: $white-color;
         position: relative;
-
         i {
             font-size: 1.5em;
             margin-left: 5px;
@@ -5001,15 +5008,16 @@ Coming Soon CSS
     }
 }
 
+
 /*================================================
 Footer CSS
 =================================================*/
+
 .footer-area {
     position: relative;
     z-index: 1;
     overflow: hidden;
     background: #08071c;
-
     .line-bg {
         position: absolute;
         top: -120px;
@@ -5033,6 +5041,7 @@ Footer CSS
         top: 45%;
     }
 }
+
 .single-footer-widget {
     .logo {
         a {
@@ -5053,7 +5062,6 @@ Footer CSS
         padding: 0;
         margin: 0;
         list-style-type: none;
-
         &.social-links {
             li {
                 display: inline-block;
@@ -5079,10 +5087,8 @@ Footer CSS
                 margin-bottom: 12px;
                 position: relative;
                 padding-left: 15px;
-
                 a {
                     color: $white-color;
-
                     &:hover {
                         color: $template-color;
                     }
@@ -5106,11 +5112,9 @@ Footer CSS
         &.footer-recent-post {
             li {
                 margin-bottom: 14px;
-
                 a {
                     color: $white-color;
                     font-weight: 500;
-
                     &:hover {
                         color: $template-color;
                     }
@@ -5137,7 +5141,6 @@ Footer CSS
                 }
                 a {
                     color: $white-color;
-
                     &:hover {
                         color: $template-color;
                     }
@@ -5157,6 +5160,7 @@ Footer CSS
         }
     }
 }
+
 .copyright-area {
     margin-top: 120px;
     border-top: 1px solid #444352;
@@ -5166,10 +5170,8 @@ Footer CSS
     }
     p {
         color: $white-color;
-
         a {
             color: $template-color;
-
             &:hover {
                 color: $pink-color;
             }
@@ -5177,34 +5179,37 @@ Footer CSS
     }
 }
 
+
 /*================================================
 Go Top CSS
 =================================================*/
+
 .go-top {
-	position: fixed;
-	cursor: pointer;
-	bottom: 15px;
-	right: 15px;
-	font-size: 25px;
-	color: $white-color;
-	background-color: $template-color;
-	z-index: 4;
-	// display: none;
-	width: 50px;
-	text-align: center;
-	height: 50px;
-	line-height: 50px;
-	border-radius: 50%;
+    position: fixed;
+    cursor: pointer;
+    bottom: 15px;
+    right: 15px;
+    font-size: 25px;
+    color: $white-color;
+    background-color: $template-color;
+    z-index: 4;
+    // display: none;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
     transition: $transition;
-    
     &:hover {
         color: $white-color;
         background: $pink-color;
     }
 }
+
 .modal {
     background: #0000004f;
 }
+
 .thank-you-area {
     text-align: center;
     padding: {
@@ -5214,4 +5219,15 @@ Go Top CSS
     h1 {
         margin-bottom: 15px;
     }
+}
+
+.buttons-in-banner {
+    display: flex;
+    flex-direction: row;
+}
+
+.buymeacoffeebutton {
+    height: 50px;
+    width: 200px;
+    margin-left: 50px;
 }
